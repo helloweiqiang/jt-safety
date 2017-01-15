@@ -26,9 +26,31 @@
 		<!---strat-slider---->
 		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 		<!---//-slider---->
+		<style type="text/css">
+			.safety {
+				position: fixed;
+				top: 40%;
+				left: 88%;
+				z-index: 10000;
+			}
+			
+			.safety img {}
+			
+			.safety a {
+				position: absolute;
+				top: 100%;
+				width: 100%;
+			}
+		</style>
 	</head>
 
 	<body>
+		<!--立即报名-->
+		<div class="safety">
+			<img src="images/safe.jpg"></img>
+			<a href="https://www.sojump.hk/jq/11819915.aspx" class="btn btn-primary">立即报名</a>
+		</div>
+
 		<!-- header -->
 		<div class="header_bg">
 			<div class="container">
@@ -93,6 +115,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="header_bottom">
 		</div>
 		<!-- //end-header -->
