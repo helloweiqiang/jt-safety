@@ -23,10 +23,9 @@
 		<!--<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>-->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<!---strat-slider---->
-		<script src="js/vueanddata/vue.js"></script>		
+		<script src="js/vueanddata/vue.js"></script>
 		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 
-		
 		<!---//-slider---->
 	</head>
 
@@ -89,404 +88,394 @@
 									<a href="contact.html">联系我们</a>
 								</li>
 							</ul>
+
 						</div>
 						<!-- /.navbar-collapse -->
 
 					</nav>
+
 				</div>
 			</div>
 		</div>
-
-		<!-- //typography-page -->
-		<!-- footer-top -->
-		<div class="footer-top">
-			<div class="container">
-				<div class="footer-grids" id="data">
-					<a href=""><img src="images/zhuanti2.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingOne">
-							<h4 class="panel-title">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+		<div class="header_bottom">
+			<!-- //typography-page -->
+			<!-- footer-top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="footer-grids" id="accident">
+						<a href=""><img src="images/zhuanti2.jpg" style="width: 100%;margin-top: 20px;" /></a>
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default">
+								<!--展开栏-->
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new1.title}}
 									</a>
+									
 								  </h4>
-						</div>
-						<div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
-							<div class="panel-body">
-								{{new1.main1}}
-								<img src="{{new1.img}}" style="width: 100%;" /> 一位沃尔沃女车主从车库中取车外出时连撞8车，损失或达50余万。事发后大石坝派出所第一时间赶到现场进行调查，肇事车主将承担全部责任。
-								<img src="images/chehuo/1.jpg" style="width: 100%;" />
-								<img src="images/chehuo/3.jpg" style="width: 100%;" />
-								<img src="images/chehuo/4.jpg" style="width: 100%;" />
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+									<div class="panel-body">
+										{{new1.main1}}
+										<img :src="new1.img1" style="width: 100%;" /> {{new1.main2}}
+										<img :src="new1.img2" style="width: 100%;" />
+										<img :src="new1.img3" style="width: 100%;" />
+										<img :src="new1.img4" style="width: 100%;" />
 
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
 
-					<a href=""><img src="images/zhuanti1.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingTwo">
-							<h4 class="panel-title">
+							<a href=""><img :src="new2.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>小轿车追尾搅拌车2死2伤 现场有浓烈酒味疑醉驾
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new2.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
-							<div class="panel-body">
-								<img src="images/chehuo/5.jpg" style="width: 100%;" /> 11月15日凌晨时分，江西省吉安市吉安县凤凰镇105国道新塘山路口发生一起惨烈车祸，一辆宝马轿车以非常快的速度追尾一辆大型水泥搅拌车，造成2人死亡2人受伤。 据参加救援的人员讲述，现场弥漫着一股酒味。
-								<img src="images/chehuo/6.jpg" style="width: 100%;" />
-								<img src="images/chehuo/7.jpg" style="width: 100%;" />
-
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
+									<div class="panel-body">
+										{{new2.main1}}
+										<img :src="new2.img1" style="width: 100%;" />
+										<img :src="new2.img2" style="width: 100%;" />
+										<img :src="new2.img3" style="width: 100%;" />
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/zhuanti4.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingThree">
-							<h4 class="panel-title">
+							<a href=""><img :src="new3.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>澳大利亚墨尔本一汽车故意冲撞人群 3死20伤
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new3.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseThree" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingThree">
-							<div class="panel-body">
-								<img src="images/chehuo/8.jpg" style="width: 100%;" /> 1月20日，一辆红色桑塔纳蓄意冲进墨尔本繁华街道的购物人群，至少造成3人死亡、20人受伤，目前尚未确认此次事件与恐怖组织有关联。
-								<img src="images/chehuo/9.jpg" style="width: 100%;" /> 当地警方表示，肇事男子确系蓄意而为，但目前未确认事件与恐怖组织有关联。
-								<img src="images/chehuo/10.jpg" style="width: 100%;" /> 在此次事件中已确认有四名儿童受伤，还有婴儿车受到冲击。其中一人伤势垂危，另外三人伤势严重。
+								</div>
+								<div id="collapseThree" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingThree">
+									<div class="panel-body">
+										{{new3.main1}}
+
+										<img :src="new3.img1" style="width: 100%;" alt="" /> {{new3.main2}}
+
+										<img :src="new3.img2" style="width: 100%;" alt="" /> {{new3.main3}}
+
+										<img :src="new3.img3" style="width: 100%;" alt="" />
+
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/zhuanti3.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingFour">
-							<h4 class="panel-title">
+							<a href=""><img :src="new4.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFour">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>网爆峨眉双福凌晨发生车祸:小车粉碎 多人受伤
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new4.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFour">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 据网友爆料：1月5日凌晨1点左右，峨眉往双福（冯岗）路口发生一起交通事故。一辆小轿车与大货车猛烈相撞，两车均受重受损，事故中有人员受伤。还是那句老话，车祸猛于虎，且行且珍惜。快要过年了，大家开车一定要注意安全，生命只有一次，平安是福。祝伤者早日康复。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 从现场照片上看，两车均受伤不轻，大车已冲出路面，小车车头被撞的面目全非，几乎成为一堆废铁，汽车零部件和碎片散落一地。据悉，当时小车上有4人，车上有人员受伤，被紧急送往人民医院救治。交警正在现场处置，具体情况以官方通报为准。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 还是那句老话，车祸猛于虎，且行且珍惜。快要过年了，大家开车一定要注意安全，生命只有一次，平安是福。祝伤者早日康复。
-							</div>
-						</div>
-					</div>
+								</div>
+								<div id="collapseFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFour">
+									<div class="panel-body">
+										{{new4.main1}}
+										<img :src="new4.img1" style="width: 100%;" /> {{new4.main2}}
+										<img :src="new4.img2" style="width: 100%;" /> {{new4.main3}}
+										<img :src="new4.img3" style="width: 100%;" /> {{new4.main4}}
 
-					<a href=""><img src="images/chuanlu.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingfive">
-							<h4 class="panel-title">
+									</div>
+								</div>
+							</div>
+
+							<a href=""><img :src="new5.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingfive">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>一场离奇车祸看呆路人:这到底怎么做到的
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new5.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapsefive" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingfive">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 昨天是2017年第一个工作日，正值大家赶去上班的路上，萧山南阳发生了一起蓝色菱悦的车祸。而车祸现场似乎有些诡异……昨天早上，网友@钢琴医生韩卫国报料说：港城大道南兴路口发生交通事故，一车骑在一车上面，开车需谨慎、谨慎、再谨慎！
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 从照片看，橙色汽车骑到了蓝色菱悦车上，两车都有较大程度损伤。橙色汽车右前侧大面积凹陷，蓝色菱悦车头受损，保险杠脱落，前挡玻璃碎裂。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 所幸的是，车祸并没有造成人员伤亡。事故原因正在进一步调查中。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 有经常路过此地的网友说，这个路口没有红绿灯，而且平时车开得特别快，存在一定安全隐患。 其次，今早能见度也不是特别好，对交通出行有影响。 Tablets：那个地方车少，都开的很快的，应该在十字路口的地方放点减速带。 number777：尤其是目前雾霾深重，视线不好，路面高峰。 哆啦A梦：这个路口没红绿灯，出事故迟早的事情……
+								</div>
+								<div id="collapsefive" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingfive">
+									<div class="panel-body">
+										{{new5.main1}}
+										<img :src="new5.img1" style="width: 100%;" /> {{new5.main2}}
+										<img :src="new5.img2" style="width: 100%;" /> {{new5.main3}}
+										<img :src="new5.img3" style="width: 100%;" /> {{new5.main4}}
 
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/qiang.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingsix">
-							<h4 class="panel-title">
+							<a href=""><img :src="new6.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingsix">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>男子醉驾豪车追尾洒水车后逃逸 半边车身被撞烂
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new6.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapsesix" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingsix">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 2017年1月2日4时19分许，孙某驾驶粤B1B16A号小车（日产GTR）从水围村出来后沿福强路东往西行驶至云顶翠峰小区路段时，追尾碰撞正在作业的同方向行驶的洒水车。事故造成两车严重损毁。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 小车驾驶员孙某和车上乘客陈某受伤。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
+								</div>
+								<div id="collapsesix" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingsix">
+									<div class="panel-body">
+										{{new6.main1}}
+										<img :src="new6.img1" style="width: 100%;" /> {{new6.main2}}
+										<img :src="new6.img2" style="width: 100%;" />
+										<img :src="new6.img3" style="width: 100%;" />
+
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/laoren.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingSeven">
-							<h4 class="panel-title">
+							<a href=""><img :src="new7.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingSeven">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingSeven" aria-expanded="true" aria-controls="collapseheadingSeven">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>黑龙江一女司机驾车飞速冲下天桥隧道 车毁人亡
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new7.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseheadingSeven" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingSeven">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 2016年12月26日，黑龙江牡丹江，一女子驾驶一辆本田轿车行驶到桥梁和隧道交汇处时，直接撞破护栏，冲入地下通道中，女司机当场身亡。具体原因尚在调查中。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 车子快速冲向护栏。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 掉了下去。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 当场死亡
+								</div>
+								<div id="collapseheadingSeven" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingSeven">
+									<div class="panel-body">
+										{{new7.main1}}
+										<img :src="new7.img1" style="width: 100%;" /> {{new7.main2}}
+										<img :src="new7.img2" style="width: 100%;" /> {{new7.main3}}
+										<img :src="new7.img3" style="width: 100%;" /> {{new7.main4}}
+										<img :src="new7.img4" style="width: 100%;" />
+										<img :src="new7.img5" style="width: 100%;" />
 
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/moerben.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingEight">
-							<h4 class="panel-title">
+							<a href=""><img :src="new8.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingEight">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingEight" aria-expanded="true" aria-controls="collapseheadingEight">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>嘉兴市区一700万宾利慕尚惨遭追尾 车牌88888
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new8.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseheadingEight" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingEight">
-							<div class="panel-body">
-								12月19日上午，市区中环南路青龙桥，一辆上路价近700万元的豪车——宾利慕尚被追尾了。消息传到网上，不少网友不禁为后车司机捏把汗：“这等豪车修起来多少钱啊，赔得起吗？”记者从交警部门了解到，经保险公司工作人员现场评估，宾利轿车维修费要七八十万元，引发追尾的车也价值不菲，是辆进口的宝马轿跑，当年买来也要六七十万元，因为第三者责任险保的是100万元，应该能赔得起。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 这起追尾事故发生在上午10点左右，位置是中环南路青龙桥桥西由西向东车道，涉及到3辆车，除了两辆价格不菲的豪车，还有一辆普通的东风风行SUV轿车。据市交警支队直属二大队南湖中队出警民警徐警官介绍，因为最近中环南路在修路，部分车道被占用，交通通行压力比较大，时常会出现拥堵的情况，事发时也是如此，宾利慕尚轿车和东风风行轿车因拥堵停在前方等待通行，后方这辆宝马轿跑的驾驶员或许注意力有些不集中，驾车与前面的东风风行轿车发生了追尾，东风风行轿车受到顶撞后，又顶上了前面的宾利慕尚。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
+								</div>
+								<div id="collapseheadingEight" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingEight">
+									<div class="panel-body">
+										{{new8.main1}}
+										<img :src="new8.img1" style="width: 100%;" /> {{new8.main2}}
+										<img :src="new8.img2" style="width: 100%;" />
 
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/daqiao.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingNine">
-							<h4 class="panel-title">
+							<a href=""><img :src="new9.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingNine">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>张家口仨小伙钻燃烧车底救人 十几秒后车爆炸
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new9.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 12月10日晚9时许，一辆拉煤的半挂车头西尾东停在张宣公路河子西转弯处附近。这时，一辆银灰色帕萨特轿车从北向南驶来，司机试图向左打方向未果，轿车右侧撞上半挂车中部，轿车瞬时窜出火苗猛烈燃烧，车上受困人员生死未卜。危急时刻，冀超、秦海军、邢建明三人家驾驶的车辆正从宣化驶往张家口。相向而行的瞬间，目睹惨剧发生的三个人往回一打方向盘，就朝着起火现场开去。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> “轿车直接撞上去，车速太快了，得先救人！”12日上午，秦海军和朋友们再次来到事发现场，回想救人的情况，他们没有丝毫犹豫，“我们下车时，帕萨特就起火冒白烟。大伙打开车门救出男司机后，我们问他还有没有人被困，他已经说不上来话。我们一边打电话报警一边把他从车里拖出来，刚放下人，轿车就发出爆炸声，是前面的车轮烧崩了。”还没来得及喘口气的三个人，在爆炸声后突然听到车内传出女子的哭喊声，“车里还有人，快救！”他们再一次冲进火海救人。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
-
+								</div>
+								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
+									<div class="panel-body">
+										{{new9.main1}}
+										<img :src="new9.img1" style="width: 100%;" /> {{new9.main2}}
+										<img :src="new9.img2" style="width: 100%;" />
+										<img :src="new9.img3" style="width: 100%;" />
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/huoche.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingTen">
-							<h4 class="panel-title">
+							<a href=""><img :src="new10.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingTen">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingTen" aria-expanded="true" aria-controls="collapseheadingTen">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>河北燕郊惨烈车祸：首富之孙驾宾利撞面包车身亡
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new10.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseheadingTen" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingEight">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 12月12日下午，河北燕郊福成路西小屯村附近的燕郊福成路上，发生惨烈交通事故。记者从现场一家店铺的监控视频中看到，下午2时56分，银色面包车由南往北行驶，在路中左拐，车头刚拐进对向车道时，一辆由北向南开过来的白色宾利轿车躲闪不及，直接撞向面包车，面包车当场被撞碎……
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 两车相撞后腾起一片烟尘，面包车被撞到路边。宾利车失控，撞断一根路灯杆后，冲进附近一条河中。
-							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/daqiao.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingNine">
-							<h4 class="panel-title">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>张家口仨小伙钻燃烧车底救人 十几秒后车爆炸
-									</a>
-								  </h4>
-						</div>
-						<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 12月10日晚9时许，一辆拉煤的半挂车头西尾东停在张宣公路河子西转弯处附近。这时，一辆银灰色帕萨特轿车从北向南驶来，司机试图向左打方向未果，轿车右侧撞上半挂车中部，轿车瞬时窜出火苗猛烈燃烧，车上受困人员生死未卜。危急时刻，冀超、秦海军、邢建明三人家驾驶的车辆正从宣化驶往张家口。相向而行的瞬间，目睹惨剧发生的三个人往回一打方向盘，就朝着起火现场开去。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> “轿车直接撞上去，车速太快了，得先救人！”12日上午，秦海军和朋友们再次来到事发现场，回想救人的情况，他们没有丝毫犹豫，“我们下车时，帕萨特就起火冒白烟。大伙打开车门救出男司机后，我们问他还有没有人被困，他已经说不上来话。我们一边打电话报警一边把他从车里拖出来，刚放下人，轿车就发出爆炸声，是前面的车轮烧崩了。”还没来得及喘口气的三个人，在爆炸声后突然听到车内传出女子的哭喊声，“车里还有人，快救！”他们再一次冲进火海救人。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
+								</div>
+								<div id="collapseheadingTen" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingEight">
+									<div class="panel-body">
+										{{new10.main1}}
+										<img :src="new10.img1" style="width: 100%;" /> {{new10.main2}}
+										<img :src="new10.img2" style="width: 100%;" />
 
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/daqiao.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingNine">
-							<h4 class="panel-title">
+							<a href=""><img :src="new11.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingNine">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>张家口仨小伙钻燃烧车底救人 十几秒后车爆炸
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new11.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 12月10日晚9时许，一辆拉煤的半挂车头西尾东停在张宣公路河子西转弯处附近。这时，一辆银灰色帕萨特轿车从北向南驶来，司机试图向左打方向未果，轿车右侧撞上半挂车中部，轿车瞬时窜出火苗猛烈燃烧，车上受困人员生死未卜。危急时刻，冀超、秦海军、邢建明三人家驾驶的车辆正从宣化驶往张家口。相向而行的瞬间，目睹惨剧发生的三个人往回一打方向盘，就朝着起火现场开去。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> “轿车直接撞上去，车速太快了，得先救人！”12日上午，秦海军和朋友们再次来到事发现场，回想救人的情况，他们没有丝毫犹豫，“我们下车时，帕萨特就起火冒白烟。大伙打开车门救出男司机后，我们问他还有没有人被困，他已经说不上来话。我们一边打电话报警一边把他从车里拖出来，刚放下人，轿车就发出爆炸声，是前面的车轮烧崩了。”还没来得及喘口气的三个人，在爆炸声后突然听到车内传出女子的哭喊声，“车里还有人，快救！”他们再一次冲进火海救人。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
-
+								</div>
+								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
+									<div class="panel-body">
+										{{new11.main1}}
+										<img :src="new11.img1" style="width: 100%;" /> {{new11.main2}}
+										<img :src="new11.img2" style="width: 100%;" />
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/daqiao.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingNine">
-							<h4 class="panel-title">
+							<a href=""><img :src="new12.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingNine">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>张家口仨小伙钻燃烧车底救人 十几秒后车爆炸
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new12.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 12月10日晚9时许，一辆拉煤的半挂车头西尾东停在张宣公路河子西转弯处附近。这时，一辆银灰色帕萨特轿车从北向南驶来，司机试图向左打方向未果，轿车右侧撞上半挂车中部，轿车瞬时窜出火苗猛烈燃烧，车上受困人员生死未卜。危急时刻，冀超、秦海军、邢建明三人家驾驶的车辆正从宣化驶往张家口。相向而行的瞬间，目睹惨剧发生的三个人往回一打方向盘，就朝着起火现场开去。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> “轿车直接撞上去，车速太快了，得先救人！”12日上午，秦海军和朋友们再次来到事发现场，回想救人的情况，他们没有丝毫犹豫，“我们下车时，帕萨特就起火冒白烟。大伙打开车门救出男司机后，我们问他还有没有人被困，他已经说不上来话。我们一边打电话报警一边把他从车里拖出来，刚放下人，轿车就发出爆炸声，是前面的车轮烧崩了。”还没来得及喘口气的三个人，在爆炸声后突然听到车内传出女子的哭喊声，“车里还有人，快救！”他们再一次冲进火海救人。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
-
+								</div>
+								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
+									<div class="panel-body">
+										{{new12.main1}}
+										<img :src="new12.img1" style="width: 100%;" /> {{new12.main2}}
+										<img :src="new12.img1" style="width: 100%;" />
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/daqiao.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingNine">
-							<h4 class="panel-title">
+							<a href=""><img :src="new13.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingNine">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>张家口仨小伙钻燃烧车底救人 十几秒后车爆炸
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new13.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 12月10日晚9时许，一辆拉煤的半挂车头西尾东停在张宣公路河子西转弯处附近。这时，一辆银灰色帕萨特轿车从北向南驶来，司机试图向左打方向未果，轿车右侧撞上半挂车中部，轿车瞬时窜出火苗猛烈燃烧，车上受困人员生死未卜。危急时刻，冀超、秦海军、邢建明三人家驾驶的车辆正从宣化驶往张家口。相向而行的瞬间，目睹惨剧发生的三个人往回一打方向盘，就朝着起火现场开去。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> “轿车直接撞上去，车速太快了，得先救人！”12日上午，秦海军和朋友们再次来到事发现场，回想救人的情况，他们没有丝毫犹豫，“我们下车时，帕萨特就起火冒白烟。大伙打开车门救出男司机后，我们问他还有没有人被困，他已经说不上来话。我们一边打电话报警一边把他从车里拖出来，刚放下人，轿车就发出爆炸声，是前面的车轮烧崩了。”还没来得及喘口气的三个人，在爆炸声后突然听到车内传出女子的哭喊声，“车里还有人，快救！”他们再一次冲进火海救人。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
-
+								</div>
+								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
+									<div class="panel-body">
+										{{new13.main1}}
+										<img :src="new13.img1" style="width: 100%;" /> {{new13.main2}}
+										<img :src="new13.img2" style="width: 100%;" />
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/daqiao.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingNine">
-							<h4 class="panel-title">
+							<a href=""><img :src="new14.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingNine">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>张家口仨小伙钻燃烧车底救人 十几秒后车爆炸
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new14.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 12月10日晚9时许，一辆拉煤的半挂车头西尾东停在张宣公路河子西转弯处附近。这时，一辆银灰色帕萨特轿车从北向南驶来，司机试图向左打方向未果，轿车右侧撞上半挂车中部，轿车瞬时窜出火苗猛烈燃烧，车上受困人员生死未卜。危急时刻，冀超、秦海军、邢建明三人家驾驶的车辆正从宣化驶往张家口。相向而行的瞬间，目睹惨剧发生的三个人往回一打方向盘，就朝着起火现场开去。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> “轿车直接撞上去，车速太快了，得先救人！”12日上午，秦海军和朋友们再次来到事发现场，回想救人的情况，他们没有丝毫犹豫，“我们下车时，帕萨特就起火冒白烟。大伙打开车门救出男司机后，我们问他还有没有人被困，他已经说不上来话。我们一边打电话报警一边把他从车里拖出来，刚放下人，轿车就发出爆炸声，是前面的车轮烧崩了。”还没来得及喘口气的三个人，在爆炸声后突然听到车内传出女子的哭喊声，“车里还有人，快救！”他们再一次冲进火海救人。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
-
+								</div>
+								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
+									<div class="panel-body">
+										{{new14.main1}}
+										<img :src="new14.img1" style="width: 100%;" /> {{new14.main2}}
+										<img :src="new14.img2" style="width: 100%;" />
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/daqiao.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingNine">
-							<h4 class="panel-title">
+							<a href=""><img :src="new15.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingNine">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>张家口仨小伙钻燃烧车底救人 十几秒后车爆炸
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new15.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 12月10日晚9时许，一辆拉煤的半挂车头西尾东停在张宣公路河子西转弯处附近。这时，一辆银灰色帕萨特轿车从北向南驶来，司机试图向左打方向未果，轿车右侧撞上半挂车中部，轿车瞬时窜出火苗猛烈燃烧，车上受困人员生死未卜。危急时刻，冀超、秦海军、邢建明三人家驾驶的车辆正从宣化驶往张家口。相向而行的瞬间，目睹惨剧发生的三个人往回一打方向盘，就朝着起火现场开去。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> “轿车直接撞上去，车速太快了，得先救人！”12日上午，秦海军和朋友们再次来到事发现场，回想救人的情况，他们没有丝毫犹豫，“我们下车时，帕萨特就起火冒白烟。大伙打开车门救出男司机后，我们问他还有没有人被困，他已经说不上来话。我们一边打电话报警一边把他从车里拖出来，刚放下人，轿车就发出爆炸声，是前面的车轮烧崩了。”还没来得及喘口气的三个人，在爆炸声后突然听到车内传出女子的哭喊声，“车里还有人，快救！”他们再一次冲进火海救人。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
-
+								</div>
+								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
+									<div class="panel-body">
+										{{new15.main1}}
+										<img :src="new15.img1" style="width: 100%;" /> {{new15.main2}}
+										<img :src="new15.img2" style="width: 100%;" />
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/daqiao.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingNine">
-							<h4 class="panel-title">
+							<a href=""><img :src="new16.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingNine">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>张家口仨小伙钻燃烧车底救人 十几秒后车爆炸
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new16.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 12月10日晚9时许，一辆拉煤的半挂车头西尾东停在张宣公路河子西转弯处附近。这时，一辆银灰色帕萨特轿车从北向南驶来，司机试图向左打方向未果，轿车右侧撞上半挂车中部，轿车瞬时窜出火苗猛烈燃烧，车上受困人员生死未卜。危急时刻，冀超、秦海军、邢建明三人家驾驶的车辆正从宣化驶往张家口。相向而行的瞬间，目睹惨剧发生的三个人往回一打方向盘，就朝着起火现场开去。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> “轿车直接撞上去，车速太快了，得先救人！”12日上午，秦海军和朋友们再次来到事发现场，回想救人的情况，他们没有丝毫犹豫，“我们下车时，帕萨特就起火冒白烟。大伙打开车门救出男司机后，我们问他还有没有人被困，他已经说不上来话。我们一边打电话报警一边把他从车里拖出来，刚放下人，轿车就发出爆炸声，是前面的车轮烧崩了。”还没来得及喘口气的三个人，在爆炸声后突然听到车内传出女子的哭喊声，“车里还有人，快救！”他们再一次冲进火海救人。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
+								</div>
+								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
+									<div class="panel-body">
+										{{new16.main1}}
+										<img :src="new16.img1" style="width: 100%;" /> {{new16.main2}}
+										<img :src="new16.img2" style="width: 100%;" />
 
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/daqiao.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingNine">
-							<h4 class="panel-title">
+							<a href=""><img :src="new17.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingNine">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>张家口仨小伙钻燃烧车底救人 十几秒后车爆炸
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new17.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 12月10日晚9时许，一辆拉煤的半挂车头西尾东停在张宣公路河子西转弯处附近。这时，一辆银灰色帕萨特轿车从北向南驶来，司机试图向左打方向未果，轿车右侧撞上半挂车中部，轿车瞬时窜出火苗猛烈燃烧，车上受困人员生死未卜。危急时刻，冀超、秦海军、邢建明三人家驾驶的车辆正从宣化驶往张家口。相向而行的瞬间，目睹惨剧发生的三个人往回一打方向盘，就朝着起火现场开去。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> “轿车直接撞上去，车速太快了，得先救人！”12日上午，秦海军和朋友们再次来到事发现场，回想救人的情况，他们没有丝毫犹豫，“我们下车时，帕萨特就起火冒白烟。大伙打开车门救出男司机后，我们问他还有没有人被困，他已经说不上来话。我们一边打电话报警一边把他从车里拖出来，刚放下人，轿车就发出爆炸声，是前面的车轮烧崩了。”还没来得及喘口气的三个人，在爆炸声后突然听到车内传出女子的哭喊声，“车里还有人，快救！”他们再一次冲进火海救人。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
-
+								</div>
+								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
+									<div class="panel-body">
+										{{new17.main1}}
+										<img :src="new17.img1" style="width: 100%;" /> {{new17.main2}}
+										<img :src="new17.img2" style="width: 100%;" />
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/daqiao.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingNine">
-							<h4 class="panel-title">
+							<a href=""><img :src="new18.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingNine">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>张家口仨小伙钻燃烧车底救人 十几秒后车爆炸
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new18.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 12月10日晚9时许，一辆拉煤的半挂车头西尾东停在张宣公路河子西转弯处附近。这时，一辆银灰色帕萨特轿车从北向南驶来，司机试图向左打方向未果，轿车右侧撞上半挂车中部，轿车瞬时窜出火苗猛烈燃烧，车上受困人员生死未卜。危急时刻，冀超、秦海军、邢建明三人家驾驶的车辆正从宣化驶往张家口。相向而行的瞬间，目睹惨剧发生的三个人往回一打方向盘，就朝着起火现场开去。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> “轿车直接撞上去，车速太快了，得先救人！”12日上午，秦海军和朋友们再次来到事发现场，回想救人的情况，他们没有丝毫犹豫，“我们下车时，帕萨特就起火冒白烟。大伙打开车门救出男司机后，我们问他还有没有人被困，他已经说不上来话。我们一边打电话报警一边把他从车里拖出来，刚放下人，轿车就发出爆炸声，是前面的车轮烧崩了。”还没来得及喘口气的三个人，在爆炸声后突然听到车内传出女子的哭喊声，“车里还有人，快救！”他们再一次冲进火海救人。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
-
+								</div>
+								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
+									<div class="panel-body">
+										{{new18.main1}}
+										<img :src="new18.img1" style="width: 100%;" /> {{new18.main2}}
+										<img :src="new18.img2" style="width: 100%;" />
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/daqiao.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingNine">
-							<h4 class="panel-title">
+							<a href=""><img :src="new19.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingNine">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>张家口仨小伙钻燃烧车底救人 十几秒后车爆炸
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new19.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 12月10日晚9时许，一辆拉煤的半挂车头西尾东停在张宣公路河子西转弯处附近。这时，一辆银灰色帕萨特轿车从北向南驶来，司机试图向左打方向未果，轿车右侧撞上半挂车中部，轿车瞬时窜出火苗猛烈燃烧，车上受困人员生死未卜。危急时刻，冀超、秦海军、邢建明三人家驾驶的车辆正从宣化驶往张家口。相向而行的瞬间，目睹惨剧发生的三个人往回一打方向盘，就朝着起火现场开去。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> “轿车直接撞上去，车速太快了，得先救人！”12日上午，秦海军和朋友们再次来到事发现场，回想救人的情况，他们没有丝毫犹豫，“我们下车时，帕萨特就起火冒白烟。大伙打开车门救出男司机后，我们问他还有没有人被困，他已经说不上来话。我们一边打电话报警一边把他从车里拖出来，刚放下人，轿车就发出爆炸声，是前面的车轮烧崩了。”还没来得及喘口气的三个人，在爆炸声后突然听到车内传出女子的哭喊声，“车里还有人，快救！”他们再一次冲进火海救人。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
-
+								</div>
+								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
+									<div class="panel-body">
+										{{new19.main1}}
+										<img :src="new19.img1" style="width: 100%;" /> {{new19.main2}}
+										<img :src="new19.img2" style="width: 100%;" />
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<a href=""><img src="images/daqiao.jpg" style="width: 100%;margin-top: 20px;" /></a>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingNine">
-							<h4 class="panel-title">
+							<a href=""><img :src="new20.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingNine">
+									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>张家口仨小伙钻燃烧车底救人 十几秒后车爆炸
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new20.title}}
 									</a>
 								  </h4>
-						</div>
-						<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
-							<div class="panel-body">
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> 12月10日晚9时许，一辆拉煤的半挂车头西尾东停在张宣公路河子西转弯处附近。这时，一辆银灰色帕萨特轿车从北向南驶来，司机试图向左打方向未果，轿车右侧撞上半挂车中部，轿车瞬时窜出火苗猛烈燃烧，车上受困人员生死未卜。危急时刻，冀超、秦海军、邢建明三人家驾驶的车辆正从宣化驶往张家口。相向而行的瞬间，目睹惨剧发生的三个人往回一打方向盘，就朝着起火现场开去。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" /> “轿车直接撞上去，车速太快了，得先救人！”12日上午，秦海军和朋友们再次来到事发现场，回想救人的情况，他们没有丝毫犹豫，“我们下车时，帕萨特就起火冒白烟。大伙打开车门救出男司机后，我们问他还有没有人被困，他已经说不上来话。我们一边打电话报警一边把他从车里拖出来，刚放下人，轿车就发出爆炸声，是前面的车轮烧崩了。”还没来得及喘口气的三个人，在爆炸声后突然听到车内传出女子的哭喊声，“车里还有人，快救！”他们再一次冲进火海救人。
-								<img src="images/chehuo/2.jpg" style="width: 100%;" />
-
+								</div>
+								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
+									<div class="panel-body">
+										{{new20.main1}}
+										<img :src="new20.img1" style="width: 100%;" /> {{new20.main2}}
+										<img :src="new20.img2" style="width: 100%;" />
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<script src="js/vueanddata/data.js"></script><!--新闻数据存放-->
-				
-				<!--<figure class="effect-winston">
+							<script src="js/vueanddata/accidentdata.js"></script>
+							<!--新闻数据存放-->
+
+							<!--<figure class="effect-winston">
 					<img src="images/1.jpg" alt="" class="img-responsive one" />
 					<figcaption> 
 						<h2>Jolly <span>Winston</span></h2>
@@ -522,62 +511,62 @@
 						</ul>
 					</figcaption>			
 				</figure>-->
-			</div>
-		</div>
-		</div>
-
-		<!-- //footer-top -->
-		<!-- footer -->
-		<div class="footer">
-			<div class="container">
-				<h3>订阅我们的新闻</h3>
-				<p class="para">在下方输入框输入您的邮箱账号进行订阅</p>
-				<div class="footer-contact">
-					<form>
-						<input type="text" placeholder="输入您的邮箱" required=" ">
-						<input type="submit" value="">
-					</form>
-				</div>
-				<div class="footer-grids">
-					<div class="col-md-3 footer-grid">
-						<p>浙江省 余杭区莫干山路1515号 交通学院创业楼108
-							<a href="mailto:info@example.com">admin@jt-safety.com</a>
-							<p>Phone : 0571-88184006</p>
-							<p>运营支持：杭州交赞科技有限公司</p>
+						</div>
 					</div>
-					<div class="col-md-2 footer-grid">
-						<!--<ul>
+				</div>
+
+				<!-- //footer-top -->
+				<!-- footer -->
+				<div class="footer">
+					<div class="container">
+						<h3>订阅我们的新闻</h3>
+						<p class="para">在下方输入框输入您的邮箱账号进行订阅</p>
+						<div class="footer-contact">
+							<form>
+								<input type="text" placeholder="输入您的邮箱" required=" ">
+								<input type="submit" value="">
+							</form>
+						</div>
+						<div class="footer-grids">
+							<div class="col-md-3 footer-grid">
+								<p>浙江省 余杭区莫干山路1515号 交通学院创业楼108
+									<a href="mailto:info@example.com">admin@jt-safety.com</a>
+									<p>Phone : 0571-88184006</p>
+									<p>运营支持：杭州交赞科技有限公司</p>
+							</div>
+							<div class="col-md-2 footer-grid">
+								<!--<ul>
 						<li><a href="contact.html">Contact</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="#">运营支持：杭州交赞科技有限公司</a></li>
 						<li><a href="#">Terms</a></li>
 					</ul>-->
-					</div>
-					<div class="col-md-2 footer-grid">
-						<!--<ul>
+							</div>
+							<div class="col-md-2 footer-grid">
+								<!--<ul>
 						<li><a href="#">Download</a></li>
 						<li><a href="#">Support</a></li>
 						<li><a href="#">Documents</a></li>
 					</ul>-->
-					</div>
-					<div class="col-md-2 footer-grid">
-						<!--<ul>
+							</div>
+							<div class="col-md-2 footer-grid">
+								<!--<ul>
 						<li><a href="#">Venenatis</a></li>
 						<li><a href="#">Extras</a></li>
 						<li><a href="#">Forums</a></li>
 					</ul>-->
-					</div>
-					<div class="col-md-3 footer-grid">
+							</div>
+							<div class="col-md-3 footer-grid">
 
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="footer-copy">
+							<p>Copyright &copy; 2016.浙江交通安全教育网 All rights reserved.</p>
+						</div>
 					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="footer-copy">
-					<p>Copyright &copy; 2016.浙江交通安全教育网 All rights reserved.</p>
 				</div>
 			</div>
-		</div>
-		</div>
 		</div>
 		<!-- //footer -->
 		<!-- scroll_top_btn -->

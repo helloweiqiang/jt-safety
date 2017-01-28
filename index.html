@@ -24,6 +24,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 		<!---strat-slider---->
+		<script src="js/vueanddata/vue.js"></script>
 		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 		<!---//-slider---->
 
@@ -95,8 +96,7 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="header_bottom">
+		<div class="header_bottom" style="z-index: 1;">
 		</div>
 		<!-- //end-header -->
 		<!-- banner -->
@@ -177,7 +177,7 @@
 		</div>
 		<!-- //banner-bottom1 -->
 		<!-- banner-bottom -->
-		<div class="banner-bottom">
+		<div class="banner-bottom" id="accident">
 			<div class="container">
 				<div class="col-lg-4">
 					<div class="panel panel-primary">
@@ -187,11 +187,12 @@
 						</div>
 						<div class="panel-body">
 							<ul style="list-style: none;">
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="news_pa">{{new1.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident2.html">{{new2.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident3.html">{{new3.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident4.html">{{new4.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident5.html">{{new5.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident6.html">{{new6.title}}</a></span></li>
 							</ul>
 						</div>
 					</div>
@@ -201,16 +202,16 @@
 						<div class="panel-heading" style="display: flex;flex-direction: row;align-items: center;justify-content: space-around;">
 							<h3 class="panel-title"> <img src="images/zhengce.png"/> 政策标准</h3>
 							<h6><a href="about.html" style="color: white;">查看更多</a></h6>
-							
-							
+
 						</div>
 						<div class="panel-body">
 							<ul style="list-style: none;">
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident1.html">{{new1.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident2.html">{{new2.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident3.html">{{new3.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident4.html">{{new4.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident5.html">{{new5.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident6.html">{{new6.title}}</a></span></li>
 							</ul>
 						</div>
 					</div>
@@ -221,19 +222,21 @@
 						<div class="panel-heading" style="display: flex;flex-direction: row;align-items: center;justify-content: space-around;">
 							<h3 class="panel-title"> <img src="images/shigu.png"/> 事故报道</h3>
 							<h6><a href="codes.html" style="color: white;">查看更多</a></h6>
-							
+
 						</div>
 						<div class="panel-body">
 							<ul style="list-style: none;">
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="new1.href">{{new1.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="new2.href">{{new2.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="new3.href">{{new3.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="new4.href">{{new4.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="new5.href">{{new5.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="new6.href">{{new6.title}}</a></span></li>
 							</ul>
 						</div>
 					</div>
 				</div>
+
 				<!-- //banner-bottom -->
 				<!-- body_grids -->
 				<div class="wlcome">
@@ -509,6 +512,8 @@
 		<!-- for bootstrap w<br />orking -->
 		<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 		<!-- //for bootstrap working -->
+		<script src="js/vueanddata/accident	data.js"></script>
+
 	</body>
 
 </html>
