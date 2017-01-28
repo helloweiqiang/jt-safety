@@ -1,9 +1,299 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
+		<title>新闻资讯详情页面</title>
+		<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="浙江交通安全教育网" />
+		<script type="application/x-javascript">
+			addEventListener("load", function() {
+				setTimeout(hideURLbar, 0);
+			}, false);
+
+			function hideURLbar() {
+				window.scrollTo(0, 1);
+			}
+		</script>
+		<!-- //for-mobile-apps -->
+		<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!--<link href='http://fonts.useso.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>-->
+		<!--<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>-->
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<!---strat-slider---->
+
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/vueanddata/vue.js"></script>
+
+		<!---//-slider---->
+		<style type="text/css">
+			.contact img {
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+		</style>
 	</head>
+
 	<body>
+		<!-- header -->
+		<div class="header_bg">
+			<div class="container">
+				<!-----start-header----->
+				<div class="header">
+					<div class="logo">
+						<a href="index.html"><img src="../images/logo1.png" alt=" " /></a>
+					</div>
+					<nav class="navbar navbar-default">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="act">
+									<a href="../index.html">首页</a>
+								</li>
+								<!--<li class="dropdown">-->
+								<!--<a href="news.html" class="dropdown-toggle" data-toggle="dropdown">新闻资讯<!--<b class="caret"></b></a>
+								<!--<ul class="dropdown-menu multi-column columns-3">
+									<div class="row">
+										<div class="party">
+											<ul class="multi-column-dropdown">
+												<li><a href="about.html">行业动态</a></li>
+												<li class="divider"></li>
+												<li><a href="about.html">安全动态</a></li>
+												<li class="divider"></li>
+												<li><a href="about.html">新闻资讯</a></li>
+											</ul>
+										</div>
+									</div>
+								</ul>-->
+								<!--</li>-->
+								<li>
+									<a href="../news.html">新闻资讯</a>
+								</li>
+
+								<li>
+									<a href="../about.html">政策标准</a>
+								</li>
+								<li>
+									<a href="../codes.html">事故报道</a>
+								</li>
+								<li>
+									<a href="../results.html">儿童安全</a>
+								</li>
+								<li>
+									<a href="../contact.html">联系我们</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="header_bottom">
+		</div>
+		<!-- //end-header -->
+		<!-- banner1 -->
+		<!--<div class="banner1">调用大图，去除注释即可-->
+		<div class="container">
+			<!--<div class="banner1-info">
+				<h3>It has survived not only five centuries, but also the leap 
+					into electronic typesetting, remaining essentially unchanged. It was 
+					popularised in the 1960s.</h3>
+			</div>-->
+		</div>
+		</div>
+		<!-- //banner1 -->
+		<!-- contact -->
+		<div class="contact" id="rules" style="margin-top: 30px;">
+			<div class="container">
+				<h3>{{rules3.title}}</h3>
+				<!--<p class="nihil">Vote For Real Government.</p>-->
+				<div class="contact-grid">
+					<div class="col-md-12 contact-left">
+						<!--<iframe src="http://j.map.baidu.com/iQpRH" frameborder="0" style="border:0"></iframe>--> 
+                        <p style="text-align: center; line-height: 1.5em;"><span style="font-size: 14px;"><strong><span style="font-family: 宋体;">{{rules3.main1}}</span></strong></span></p><p style="text-align: center; line-height: 1.5em;"><span style="font-family: 宋体; font-size: 14px;"><span style="line-height: 0px; font-size: 14px; display: none;">‍</span>（{{rules3.main2}}）</span></p><p style="line-height: 1.5em;"><span style="font-size: 14px; mso-font-kerning: 1.0000pt; mso-fareast-font-family: 宋体;"><br  /></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-family: Calibri; font-size: 14px;">各省、自治区、直辖市、新疆生产建设兵团交通运输厅(<span style="font-family: 宋体; font-size: 14px;">局、委</span>)<span style="font-family: 宋体; font-size: 14px;">，天津市市政公路管理局，天津市、上海市交通运输和港口管理局，部属各单位，部内各单位：</span></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-family: Calibri; font-size: 14px;"><span style="font-family: 宋体; font-size: 14px;"><br  /></span></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-family: Calibri; font-size: 14px;"></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-family: Calibri; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 为<span style="font-family: 宋体; font-size: 14px;">贯彻落实《中华人民共和国计算机信息系统安全保护条例》和《信息安全等级保护管理办法》等法规要求，做好交通运输行业信息安全等级保护，对于提升行业信息安全防护能力和水平，维护公共利益、社会秩序和国家安全具有重要作用。为进一步加强交通运输行业信息安全等级保护工作，按照公安部《关于开展全国重要信息系统安全等级保护定级工作的通知》（公信安〔</span>2007<span style="font-family: 宋体; font-size: 14px;">〕</span>861<span style="font-family: 宋体; font-size: 14px;">号）和《关于开展信息安全等级保护安全建设整改工作的指导意见》（公信安〔</span>2009<span style="font-family: 宋体; font-size: 14px;">〕</span>1429<span style="font-family: 宋体; font-size: 14px;">号）等文件要求，结合交通运输行业实际，现就开展信息安全等级保护有关事宜通知如下：</span></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-family: Calibri; font-size: 14px;"><span style="font-family: 宋体; font-size: 14px;"><br  /></span></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-family: Calibri; font-size: 14px;"></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-size: 14px;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="font-family: 宋体; font-size: 14px;">一、指导思想</span></strong><strong><br  /></strong><span style="font-family: Calibri; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="font-family: 宋体; font-size: 14px;">深入贯彻落实科学发展观，遵照国家有关信息安全等级保护政策规定和技术标准规范，紧密结合交通运输行业信息化发展实际，按照准确定级、科学评估、统筹考虑、突出重点、注重实效、完善机制的原则，推进交通运输行业信息系统等级保护体系建设，完善信息安全管理制度，建立健全信息安全防控技术措施和手段，切实提高信息系统安全保护能力，保障和促进交通运输行业信息化科学健康有序发展。</span></span></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-size: 14px;"><span style="font-family: Calibri; font-size: 14px;"><span style="font-family: 宋体; font-size: 14px;"><br  /></span></span></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-family: Calibri; font-size: 14px;"></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-size: 14px;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">二、总体目标</span></strong><strong><br  /></strong><span style="font-family: Calibri; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">到</span><span style="font-family: Calibri; font-size: 14px;">2015</span><span style="font-family: 宋体; font-size: 14px;">年底前，基本建立交通运输行业信息安全等级保护常态化运行和监督检查机制，完善管理制度和技防手段，切实提高交通运输行业信息安全防护能力、隐患发现能力、应急处置能力，为交通运输行业信息化健康发展提供可靠保障。主要是：完成安全保护等级为第二级以上（含第二级）的已运营（运行）信息系统的定级备案、安全建设整改和测评；新建、扩建、升级改造的信息系统在规划建设阶段同步开展信息系统定级、备案、安全建设及测评；完善行业信息安全等级保护政策标准体系，建立行业信息安全等级保护工作情况动态报送和监督检查机制。</span></span></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-size: 14px;"><span style="font-family: Calibri; font-size: 14px;"><span style="font-family: 宋体; font-size: 14px;"><br  /></span></span></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-family: Calibri; font-size: 14px;"></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-size: 14px;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="font-family: 宋体; font-size: 14px;">三、主要依据</span></strong><strong><br  /></strong><span style="font-family: Calibri; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">（一）《中华人民共和国计算机信息系统安全保护条例》（国务院</span><span style="font-family: Calibri; font-size: 14px;">147</span><span style="font-family: 宋体; font-size: 14px;">号令）；</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">（二）《关于信息安全等级保护工作的实施意见》（公通字〔</span><span style="font-family: Calibri; font-size: 14px;">2004</span><span style="font-family: 宋体; font-size: 14px;">〕</span><span style="font-family: Calibri; font-size: 14px;">66</span><span style="font-family: 宋体; font-size: 14px;">号）；</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">（三）《信息安全等级保护管理办法》（公通字〔</span><span style="font-family: Calibri; font-size: 14px;">2007</span><span style="font-family: 宋体; font-size: 14px;">〕</span><span style="font-family: Calibri; font-size: 14px;">43</span><span style="font-family: 宋体; font-size: 14px;">号）；</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="font-family: 宋体; font-size: 14px;">（四）《关于开展全国重要信息系统安全等级保护定级工作的通知》（公通字〔</span><span style="font-family: Calibri; font-size: 14px;">2007</span><span style="font-family: 宋体; font-size: 14px;">〕</span><span style="font-family: Calibri; font-size: 14px;">861</span><span style="font-family: 宋体; font-size: 14px;">号）；</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">（五）《信息安全等级保护备案实施细则》（公信安〔</span><span style="font-family: Calibri; font-size: 14px;">2007</span><span style="font-family: 宋体; font-size: 14px;">〕</span><span style="font-family: Calibri; font-size: 14px;">1360</span><span style="font-family: 宋体; font-size: 14px;">号）；</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="font-family: 宋体; font-size: 14px;">（六）《关于开展信息系统等级保护安全建设整改工作的指导意见》（公信安〔</span><span style="font-family: Calibri; font-size: 14px;">2009</span><span style="font-family: 宋体; font-size: 14px;">〕</span><span style="font-family: Calibri; font-size: 14px;">1429</span><span style="font-family: 宋体; font-size: 14px;">号）；</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">（七）《关于加强国家电子政务工程建设项目信息安全风险评估工作的通知》（发改高技〔</span><span style="font-family: Calibri; font-size: 14px;">2008</span><span style="font-family: 宋体; font-size: 14px;">〕</span><span style="font-family: Calibri; font-size: 14px;">2071</span><span style="font-family: 宋体; font-size: 14px;">号）；</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="font-family: 宋体; font-size: 14px;">（八）《计算机信息系统安全保护等级划分准则》（</span><span style="font-family: Calibri; font-size: 14px;">GB17859</span><span style="font-family: 宋体; font-size: 14px;">）；</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">（九）《信息安全技术 信息系统安全等级保护定级指南》</span><span style="font-family: Calibri; font-size: 14px;">(GB/T22240-2008)</span><span style="font-family: 宋体; font-size: 14px;">；</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">（十）《信息安全技术 信息系统安全等级保护实施指南》</span><span style="font-family: Calibri; font-size: 14px;">(GB/T25058-2010)</span><span style="font-family: 宋体; font-size: 14px;">；</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="font-family: 宋体; font-size: 14px;">（十一）《信息安全技术 信息系统安全等级保护基本要求》</span><span style="font-family: Calibri; font-size: 14px;">(GB/T22239-2008)</span><span style="font-family: 宋体; font-size: 14px;">。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">以上政策文件和标准规范均可从中国信息安全等级保护网</span></span><span style="font-family: Calibri; font-size: 14px;"><span style="font-family: 宋体; font-size: 14px;">查询下载。</span></span></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-size: 14px;"><span style="font-family: Calibri; font-size: 14px;"><span style="font-family: 宋体; font-size: 14px;"><br  /></span></span></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-family: Calibri; font-size: 14px;"></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-size: 14px;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="font-family: 宋体; font-size: 14px;">四、主要任务及工作安排</span></strong><strong><br  /></strong><span style="font-family: Calibri; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="font-family: 宋体; font-size: 14px;">（一）信息系统摸底调查。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">组织开展对本单位信息系统的摸底调查，全面掌握信息系统的数量、分布、业务类型、应用或服务范围、系统结构等基本情况，确定定级对象。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;2012<span style="font-family: 宋体; font-size: 14px;">年</span><span style="font-family: Calibri; font-size: 14px;">7</span><span style="font-family: 宋体; font-size: 14px;">月底前，各单位应完成信息系统情况摸底调查，并填写《信息系统信息安全等级保护情况统计表》（见附件），盖章后报部科技司。已经完成定级备案手续的系统，应将该系统《信息系统安全等级保护备案表》和公安机关出具的《信息系统安全等级保护备案证明》报部科技司。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="font-family: 宋体; font-size: 14px;">（二）信息系统定级备案。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="font-family: 宋体; font-size: 14px;">按照《信息安全技术信息系统安全等级保护定级指南》，认真分析信息系统业务信息安全和系统服务安全，科学准确开展系统的定级。已运营（运行）、但尚未定级的重要信息系统要进行补充定级，新建、扩建和升级改造信息系统在规划设计阶段要同步完成系统定级工作。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="font-family: 宋体; font-size: 14px;">对于安全保护等级为二级（含第二级）的系统，各单位应按照《信息安全等级保护备案实施细则》要求，到相应公安机关备案。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;2012<span style="font-family: 宋体; font-size: 14px;">年</span><span style="font-family: Calibri; font-size: 14px;">9</span><span style="font-family: 宋体; font-size: 14px;">月底前，各单位要开展已运营（运行）和新建、扩建、升级改造的信息系统的定级，并履行备案手续，定级备案结果同时报部科技司。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="font-family: 宋体; font-size: 14px;">（三）等级保护安全建设整改。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">各单位应对照《信息安全技术信息系统安全等级保护基本要求》等标准规范，开展已建信息系统安全保护现状评估，分析查找存在的安全隐患和差距，制定信息系统安全等级保护建设整改方案并组织实施。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">新建、扩建和升级改造信息系统要在项目立项及规划设计阶段，同步规划等级保护总体设计方案，并在项目建设过程中同步完成信息安全等级保护建设工作。信息系统正式运行后，要继续做好安全运行维护管理，在制度、人员、资金等方面给予保障，形成常态化的信息安全保障机制。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;2012<span style="font-family: 宋体; font-size: 14px;">年</span><span style="font-family: Calibri; font-size: 14px;">12</span><span style="font-family: 宋体; font-size: 14px;">月底前，完成第三级以上（含第三级）已定级信息系统的安全建设和整改工作。</span><span style="font-family: Calibri; font-size: 14px;">2013</span><span style="font-family: 宋体; font-size: 14px;">年</span><span style="font-family: Calibri; font-size: 14px;">12</span><span style="font-family: 宋体; font-size: 14px;">月底，完成第二级以上（含第二级）已定级信息系统的安全建设和整改工作。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="font-family: 宋体; font-size: 14px;">（四）等级保护测评。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="font-family: 宋体; font-size: 14px;">系统建设整改工作完成后，应当按照《信息安全等级保护管理办法》要求，从全国信息安全等级保护测评机构推荐目录（见</span></span><span style="color: rgb(97, 97, 97); font-family: 宋体; font-size: 14px; text-decoration: underline;">www.djbh.net</span><span style="font-family: Calibri; font-size: 14px;">）中选择取得《信息安全等级保护测评机构推荐证书》的测评机构，开展等级测评。第四级信息系统应当每半年至少进行一次等级测评；第三级信息系统应当每年至少进行一次等级测评；第二级信息系统可参照第三级信息系统的要求进行等级测评。<br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="font-family: 宋体; font-size: 14px;">（五）等级保护工作监督检查。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="font-family: 宋体; font-size: 14px;">各单位应定期开展等级保护自查，重点检查信息安全责任落实情况、安全管理制度的落实情况、重要信息系统的安全防护状况、建设整改情况、信息安全等级测评情况、检查中发现问题整改情况，并编写年度信息安全等级保护工作报告</span><span style="font-family: Calibri; font-size: 14px;">,</span><span style="font-family: 宋体; font-size: 14px;">于每年</span><span style="font-family: Calibri; font-size: 14px;">11</span><span style="font-family: 宋体; font-size: 14px;">月底前报部科技司。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="font-family: 宋体; font-size: 14px;">部信息化主管部门将组织建立信息安全等级保护联络员队伍，定期组织开展信息安全等级保护工作督导检查。</span></span></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-size: 14px;"><span style="font-family: Calibri; font-size: 14px;"><span style="font-family: 宋体; font-size: 14px;"><br  /></span></span></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-family: Calibri; font-size: 14px;"></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-size: 14px;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="font-family: 宋体; font-size: 14px;">五、职责分工</span></strong><strong><br  /></strong><span style="font-family: Calibri; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="font-family: 宋体; font-size: 14px;">按照</span><span style="font-family: Calibri; font-size: 14px;">“</span><span style="font-family: 宋体; font-size: 14px;">谁主管、谁负责</span><span style="font-family: Calibri; font-size: 14px;">”</span><span style="font-family: 宋体; font-size: 14px;">、</span><span style="font-family: Calibri; font-size: 14px;">“</span><span style="font-family: 宋体; font-size: 14px;">谁运维、谁负责</span><span style="font-family: Calibri; font-size: 14px;">”</span><span style="font-family: 宋体; font-size: 14px;">的原则，信息系统的主管部门及运营、使用单位按照等级保护的管理规范和技术标准进行信息安全建设和管理。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="font-family: 宋体; font-size: 14px;">部科技司负责交通运输行业信息安全等级保护工作的指导、监督和检查，组织研究制订有关政策文件和标准规范。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="font-family: 宋体; font-size: 14px;">各地方交通运输主管部门负责本地区交通运输行业系统信息安全等级保护工作的组织实施和监督检查。</span></span></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-size: 14px;"><span style="font-family: Calibri; font-size: 14px;"><span style="font-family: 宋体; font-size: 14px;"></span></span></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-family: Calibri; font-size: 14px;"></span></p><p style="text-align: left; line-height: 1.5em;"><span style="font-size: 14px;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="font-family: 宋体; font-size: 14px;">六、工作要求</span></strong><strong><br  /></strong><span style="font-family: Calibri; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="font-family: 宋体; font-size: 14px;">（一）加强领导，明确责任。各单位要进一步提高对信息安全等级保护工作重要性和紧迫性的认识，切实加强对等级保护工作的组织领导，确立安全管理机构及其职责，落实信息安全等级保护管理岗位和人员，明确相关部门的安全责任，确保各项要求落实到位。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">（二）保障经费，加强监管。各单位要建立稳定的信息安全等级保护经费投入机制，将信息安全等级保护建设整改、等级测评、信息安全服务、技术培训等费用纳入信息化建设经费预算，保障等级保护工作的有效开展，并加强对资金使用的监管。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">（三）突出重点，同步建设。各单位要根据自身实际情况，对等级保护体系建设进行统筹规划，找准存在的薄弱环节和突出问题，优先抓好重要信息系统的测评整改建设。对新建、扩建、升级改造的信息系统要确保等级保护措施的同步规划、同步设计和同步实施。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">（四）加强培训，建设队伍。各单位要加强安全建设管理、安全运维和应急保障队伍建设，积极组织开展相关人员进行安全管理政策制度和技术技能培训，为信息安全等级保护工作开展提供有效的人员队伍保障。</span><br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: 宋体; font-size: 14px;">（五）协调推进，强化监督。要注重等级保护工作的统筹协调推进，建立健全等级保护工作情况报送汇总、督促检查、工作交流机制，组建行业信息安全联络员队伍。部根据情况定期组织开展信息安全等级保护工作监督检查。</span><span style="font-family: Calibri; font-size: 14px;">&nbsp;</span></span></span></p><p style="line-height: 1.5em;"><span style="font-family: Calibri; font-size: 14px;"><br  /></span></p><p style="line-height: 1.5em;"><span style="font-family: Calibri; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 中华人民共和国交通运输部办公厅<br  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 二〇一二年五月二十一日</span></p><p><br  /></p>
+
+
+					</div>
+					<div class="col-md-7 contact-right">
+						<form>
+							<!--<input type="text" placeholder="Name" required=" ">
+						<input type="text" placeholder="Email Address" required=" ">
+						<input type="text" placeholder="Phone Number" required=" ">
+						<input type="text" placeholder="Subject" required=" ">
+						<div class="clearfix"> </div>
+						<textarea placeholder="Type Your Text Here...." required=" "></textarea>
+						<input type="submit" value="Submit">
+						<input type="reset" value="Clear">-->
+						</form>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--<div class="contact-bottom">
+			<div class="container">
+				<div class="contact-bottom-grids">
+					<div class="col-md-4 contact-bottom-grid">
+						<div class="dot">
+							<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+						</div>
+						<h4>浙江杭州市余杭区<span>莫干山路交通学院创业楼108</span></h4>
+					</div>
+					<div class="col-md-4 contact-bottom-grid">
+						<div class="dot">
+							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+						</div>
+						<a href="mailto:info@example.com">admin@jt-safety.com</a>
+					</div>
+					<div class="col-md-4 contact-bottom-grid">
+						<div class="dot">
+							<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+						</div>
+						<h4>0571-88184006</h4>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>-->
+		<!-- //contact -->
+		<!-- footer-top -->
+		<div class="footer-top" style="margin-top: -120px;">
+			<div class="container">
+				<div class="footer-grids">
+					<!--<figure class="effect-winston">
+					<img src="images/1.jpg" alt="" class="img-responsive one" />
+					<figcaption> 
+						<h2>Jolly <span>Winston</span></h2>
+						<p>There are many variations of passages of Lorem Ipsum available.</p>
+						<ul class="social_icons">
+							<li><a href="#" class="f1"></a></li>
+							<li><a href="#" class="f2"></a></li>
+							<li><a href="#" class="f3"></a></li>
+						</ul>
+					</figcaption>			
+				</figure>
+				<figure class="effect-winston">
+					<img src="images/3.jpg" alt="" class="img-responsive one" />
+					<figcaption>
+						<h2>Micheal <span>James</span></h2>
+						<p>There are many variations of passages of Lorem Ipsum available.</p>
+						<ul class="social_icons">
+							<li><a href="#" class="f1"></a></li>
+							<li><a href="#" class="f2"></a></li>
+							<li><a href="#" class="f3"></a></li>
+						</ul>
+					</figcaption>			
+				</figure>
+				<figure class="effect-winston">
+					<img src="images/5.jpg" alt="" class="img-responsive one" />
+					<figcaption>
+						<h2>Adom <span>Williums</span></h2>
+						<p>There are many variations of passages of Lorem Ipsum available.</p>
+						<ul class="social_icons">
+							<li><a href="#" class="f1"></a></li>
+							<li><a href="#" class="f2"></a></li>
+							<li><a href="#" class="f3"></a></li>
+						</ul>
+					</figcaption>			
+				</figure>-->
+				</div>
+			</div>
+		</div>
+		<script src="../js/vueanddata/accidentdata.js"></script>
+		<!-- //footer-top -->
+		<!-- footer -->
+		<div class="footer">
+			<div class="container">
+				<h3>订阅我们的新闻</h3>
+				<p class="para">在下方输入框输入您的邮箱账号进行订阅</p>
+				<div class="footer-contact">
+					<form>
+						<input type="text" placeholder="输入您的邮箱" required=" ">
+						<input type="submit" value="">
+					</form>
+				</div>
+				<div class="footer-grids">
+					<div class="col-md-3 footer-grid">
+						<p>浙江省 余杭区莫干山路1515号 交通学院创业楼108
+							<a href="mailto:info@example.com">admin@jt-safety.com</a>
+							<p>Phone : 0571-88184006</p>
+							<p>运营支持：杭州交赞科技有限公司</p>
+					</div>
+					<div class="col-md-2 footer-grid">
+						<!--<ul>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#">运营支持：杭州交赞科技有限公司</a></li>
+						<li><a href="#">Terms</a></li>
+					</ul>-->
+					</div>
+					<div class="col-md-2 footer-grid">
+						<!--<ul>
+						<li><a href="#">Download</a></li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">Documents</a></li>
+					</ul>-->
+					</div>
+					<div class="col-md-2 footer-grid">
+						<!--<ul>
+						<li><a href="#">Venenatis</a></li>
+						<li><a href="#">Extras</a></li>
+						<li><a href="#">Forums</a></li>
+					</ul>-->
+					</div>
+					<div class="col-md-3 footer-grid">
+
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="footer-copy">
+					<p>Copyright &copy; 2016.浙江交通安全教育网 All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+		<!-- //footer -->
+		<!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear'
+				};
+
+				$().UItoTop({
+					easingType: 'easeOutQuart'
+				});
+
+			});
+		</script>
+
+		<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		<!--end scroll_top_btn -->
+		<!-- for bootstrap working -->
+		<script type="text/javascript" src="../js/bootstrap-3.1.1.min.js"></script>
+		<script src="../js/vueanddata/rulesdata.js"></script>
+		<!-- //for bootstrap working -->
+
 	</body>
+
 </html>

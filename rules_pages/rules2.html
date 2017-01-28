@@ -1,9 +1,711 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
+		<title>新闻资讯详情页面</title>
+		<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="浙江交通安全教育网" />
+		<script type="application/x-javascript">
+			addEventListener("load", function() {
+				setTimeout(hideURLbar, 0);
+			}, false);
+
+			function hideURLbar() {
+				window.scrollTo(0, 1);
+			}
+		</script>
+		<!-- //for-mobile-apps -->
+		<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!--<link href='http://fonts.useso.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>-->
+		<!--<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>-->
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<!---strat-slider---->
+
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/vueanddata/vue.js"></script>
+
+		<!---//-slider---->
+		<style type="text/css">
+			.contact img {
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+		</style>
 	</head>
+
 	<body>
+		<!-- header -->
+		<div class="header_bg">
+			<div class="container">
+				<!-----start-header----->
+				<div class="header">
+					<div class="logo">
+						<a href="index.html"><img src="../images/logo1.png" alt=" " /></a>
+					</div>
+					<nav class="navbar navbar-default">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="act">
+									<a href="../index.html">首页</a>
+								</li>
+								<!--<li class="dropdown">-->
+								<!--<a href="news.html" class="dropdown-toggle" data-toggle="dropdown">新闻资讯<!--<b class="caret"></b></a>
+								<!--<ul class="dropdown-menu multi-column columns-3">
+									<div class="row">
+										<div class="party">
+											<ul class="multi-column-dropdown">
+												<li><a href="about.html">行业动态</a></li>
+												<li class="divider"></li>
+												<li><a href="about.html">安全动态</a></li>
+												<li class="divider"></li>
+												<li><a href="about.html">新闻资讯</a></li>
+											</ul>
+										</div>
+									</div>
+								</ul>-->
+								<!--</li>-->
+								<li>
+									<a href="../news.html">新闻资讯</a>
+								</li>
+
+								<li>
+									<a href="../about.html">政策标准</a>
+								</li>
+								<li>
+									<a href="../codes.html">事故报道</a>
+								</li>
+								<li>
+									<a href="../results.html">儿童安全</a>
+								</li>
+								<li>
+									<a href="../contact.html">联系我们</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="header_bottom">
+		</div>
+		<!-- //end-header -->
+		<!-- banner1 -->
+		<!--<div class="banner1">调用大图，去除注释即可-->
+		<div class="container">
+			<!--<div class="banner1-info">
+				<h3>It has survived not only five centuries, but also the leap 
+					into electronic typesetting, remaining essentially unchanged. It was 
+					popularised in the 1960s.</h3>
+			</div>-->
+		</div>
+		</div>
+		<!-- //banner1 -->
+		<!-- contact -->
+		<div class="contact" id="rules" style="margin-top: 30px;">
+			<div class="container">
+				<h3>{{rules2.title}}</h3>
+				<!--<p class="nihil">Vote For Real Government.</p>-->
+				<div class="contact-grid">
+					<div class="col-md-12 contact-left">
+						<!--<iframe src="http://j.map.baidu.com/iQpRH" frameborder="0" style="border:0"></iframe>-->
+						<p>&nbsp;</p>
+						<p style="text-indent: 28px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">1 <span style="font-family: 宋体;">{{rules2.main1}}</span></span></strong></p>
+						<p style="text-indent: 28px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">&nbsp;</span></strong></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">{{rules2.main2}}</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">我国有关法规规定，信息安全管理实行涉密信息系统分级保护和非涉密信息系统等级保护制度。当前，行业大量非涉密信息 系统尚未全面落实信息安全等级保护制度，存在组织架构尚待健 全、安全责任尚不清晰、技防措施有待完善、主要任务需要明确、 资金人才投入不足等问题，亟待建立健全行业信息安全管理体系， 提升整体信息安全防护能力和水平。</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">公安部、国家保密局、国家密码管理局、国务院信息化工作办公室 联合印发的 《信息 安全等级保护管理办法 》（公通字<span style="font-family: Calibri;">[2007]43 </span><span style="font-family: 宋体;">号）第四条规定：“信息系统主管部门应当依照本办 法及相关标准规范，督促、检查、指导本行业、本部门或者本地 区信息系统运营、使用单位的信息安全等级保护工作”。交通运 输部作为行业主管部门，应统筹、协调、指导行业建立健全信息 安全管理体系，保障行业信息安全。</span></span>
+						</p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">为全面贯彻落实国家信息安全等级保护制度，强化交通运输行业 信息安全管理，确立行业信息安全等级保护工作的指导思想、基本原则、总体目标、组织机构、职责分工和管理对象，明确主要工作任务和保障措施、相关制度和标准体系框架，推进行业信息安全等级保护 管理体系建设，特制定《交通运输行业信息安全等级保护管理总则》（以下简称《总则》）。《总则》是交通运输行业开展信息安全等级保 护管理工作的基本依据。</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="text-indent: 28px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">2 <span style="font-family: 宋体;">指导思想、基本原则和总体目标</span></span></strong></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="text-indent: 28px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">2.1 <span style="font-family: 宋体;">指导思想</span></span></strong></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">以科学发展观为指导，以提升行业信息安全等级保护管理服务水</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">平为宗旨，以机制创新为动力，以制度建设为抓手，以技防手段为措 施，贯彻落实国家信息安全等级保护制度，加强顶层设计和统筹协调， 强化全要素、全生命周期管理，梳理明确信息安全重点任务，落实信 息安全管理责任分工，建立健全信息安全等级保护保障体系，不断提 升行业信息安全保障能力和水平。</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="text-indent: 28px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">2.2 <span style="font-family: 宋体;">基本原则</span></span></strong></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—</span><span style="font-family: 宋体; font-size: 14px;">统筹全局，重点保护 统筹考虑交通运输行业不同地区、不同类型信息系统特点，统筹考虑行业信息安全等级保护工作现状、面临挑战和发展趋势，统筹考 虑日常防范和应急处置两方面的管理措施；突出保障重点，集中优势 资源，优先保护交通运输信息化智能化重大基础设施、重要业务系统和重点领域应用的安全。</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—</span><span style="font-family: 宋体; font-size: 14px;">强化职能，明确责任 强化交通运输行业各级信息化主管部门督促、检查、指导信息安全等级保护工作的职能，切实提升行业信息安全等级保护管理能力和 水平；规范管理流程，进一步明确并严格落实信息系统主管、建设、 使用、运维单位等安全责任主体的责任。</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—</span><span style="font-family: 宋体; font-size: 14px;">立足行业，创新发展 紧密结合交通运输业务基础性、流动性、开放性特征，以及行业管理“条块结合”的特点，适应行业信息化逐步转向资源整合、系统 互联、业务协同的发展阶段，加快理念创新、技术创新、体制机制创 新，以安全保发展，在发展中求安全。</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—</span><span style="font-family: 宋体; font-size: 14px;">协调配合，形成合力 加强相关单位之间的协调配合，逐步建立行业信息安全等级保护应急联动、信息共享等合作机制；推动建立“政府主导、企业参与” 的可持续发展模式，积极吸引和利用各种社会专业资源，形成发展合 力，共同推进行业信息安全等级保护管理体系建设。</span></p>
+						<p><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="text-indent: 28px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">2.3 <span style="font-family: 宋体;">总体目标</span></span></strong></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">按照国家信息安全等级保护工作的总体要求，用五年左右时间， 通过建立健全各级交通运输行业信息安全等级保护组织管理机构，强 化监管职能，完善信息安全等级保护管理制度、标准体系和工作机制， 全面推进信息系统定级备案、测评整改、监督检查、应急响应等重点任务，逐步形成以行业自建服务机构为核心、广泛吸纳社会第三方机构参与的专业支撑服务队伍，大幅提升行业信息安全主动防护和应急 处置能力，显著降低信息安全风险，适应行业信息化智能化发展要求。</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="text-indent: 28px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">3 <span style="font-family: 宋体;">组织机构和职责分工</span></span></strong></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="text-indent: 28px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">3.1 <span style="font-family: 宋体;">总体架构 </span></span></strong></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">交通运输行业信息安全等级保护工作的组织机构总体架构如图<span style="font-family: Calibri;">1</span><span style="font-family: 宋体;">所示：</span></span>
+						</p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;"><img data-src="http://mmbiz.qpic.cn/mmbiz/bvmyCHiaoJYhKPrQMuaibDDic5lJgSZk1bzNmSuwibbsnHQnJriaLGHzCdH23O8dxibJqBZyM0OdRdSUlEN7Pn9VbPuA/0?wx_fmt=jpeg" data-ratio="0.5454545454545454" data-w="495" data-s="300,640" data-type="jpeg"  /></span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">图 <span style="font-family: Calibri;">1</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">交通运输行业信息安全等级保护管理组织机构总体架构图</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;"></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="text-indent: 28px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">3.2 <span style="font-family: 宋体;">交通运输部</span></span></strong></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">1.</span><span style="font-family: 宋体; font-size: 14px;">信息安全等级保护工作决策机构 </span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">部信息化工作领导小组是信息安全等级保护工作的决策机构，负责行业信息安全等级保护工作有关重大事宜的决策，主要职责为：</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—研究制定行业信息安全等级保护工作的方针、政策及有关规 章制度；</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—指导协调跨行业、跨部门信息安全等级保护工作；</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—审议行业信息安全等级保护年度工作安排。</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">2.</span><span style="font-family: 宋体; font-size: 14px;">信息安全等级保护工作监管机构 </span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">部信息化工作领导小组办公室是信息安全等级保护工作的监管机构，负责行业信息安全等级保护工作的监督管理，主要职责为：</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—组织、指导、协调和监督行业信息安全等级保护工作；</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—组织制定行业信息安全等级保护工作有关政策、规章制度、 标准规范等；</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—组织建立行业信息安全等级保护测评服务体系；</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—组织开展行业信息安全通报、检查、应急管理、绩效评估、教 育培训、技术研究等。</span></p>
+						<p><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp;&nbsp; 3.</span><span style="font-family: 宋体; font-size: 14px;">信息安全等级保护工作执行机构</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">部及跨省行业信息系统的建设单位、运行维护单位和使用单位是信息安全等级保护执行机构，负责信息安全等级保护各项要求的具体执行落实，主要职责分别为：</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">1</span><span style="font-family: 宋体;">）</span></span><span style="font-family: 宋体; font-size: 14px;">信息系统建设单位</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—依照有关管理规定和标准规范，组织开展信息系统安全规划、 设计、建设和改扩建工作；</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—在信息化项目建设过程中，同步规划、设计、建设、运行、</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">2</span><span style="font-family: 宋体;">）</span></span><span style="font-family: 宋体; font-size: 14px;">管理信息安全设施</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—负责信息系统建设过程中与人员、资产、采购、外包有关的 信息安全日常管理。</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">（</span><span style="font-family: 宋体; font-size: 14px;">3</span><span style="font-family: 宋体; font-size: 14px;">）信息系统运行维护单位</span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—依照有关管理规定和标准规范，制定、落实各项信息安全管 理规定和操作规程；</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—对信息系统安全状况进行监测，针对异常状况采取有效措施， 确保系统稳定可靠运行；</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—负责信息安全事件应急处置相关工作；</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—负责信息系统运行维护过程中与人员、资产、采购、外包有 关的信息安全日常管理。</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">3</span><span style="font-family: 宋体;">）信息系统使用单位</span></span>
+						</p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—落实信息安全管理责任人，严格执行安全操作使用规范，确 保系统使用安全；</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—配合运行维护单位进行信息安全检查检测和应急处置等工作；</span></p>
+						<p style="text-indent: 28px;"><span style="font-family: 宋体; font-size: 14px;">—负责信息系统使用过程中与人员、资产、采购、外包有关的 信息安全日常管理。</span></p>
+						<p><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="text-indent: 28px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">3.3 <span style="font-family: 宋体;">省级交通运输主管部门</span></span></strong></p>
+						<p style="text-indent: 28px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;"><span style="font-family: 宋体;">1.</span></span></strong><span style="font-family: 宋体; font-size: 14px;">信息安全等级保护工作决策机构 </span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp;&nbsp; 各省交通运输主管部门应根据实际情况落实本地区信息安全等级保护工作的决策机构，其具体职责为：</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">—组织制定本地区行业信息安全等级保护管理的方针、政策及有关规章制度；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">—指导协调本地区跨行业、跨部门信息安全等级保护管理工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">—审议本地区行业信息安全等级保护管理年度工作安排。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; 2.</span><span style="font-family: 宋体; font-size: 14px;">信息安全等级保护工作监管机构 </span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">各省交通运输主管部门应根据实际情况落实本地区信息安全等级保护工作的监管机构，其具体职责为：</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">—组织、指导、协调和监督地区行业信息安全等级保护管理工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">—组织制修订本地区行业信息安全等级保护管理有关政策、规 章制度、标准规范等文件；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">—组织协调本地区行业信息安全等级保护相关科技项目的研 究；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">—配合部信息化工作领导小组办公室开展本地区行业信息安全 通报、检查、应急管理、绩效评估等工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">—组织和指导本地区行业信息安全等级保护管理的教育培训 工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; 3<span style="font-family: 宋体;">．信息安全等级保护工作执行机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; 省级及省内跨市行业信息系统的建设单位、运行维护单位和使用 单位是省级交通运输主管部门信息安全等级保护工作的执行机构，主 要负责信息安全等级保护工作的执行，具体职责为：</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; （<span style="font-family: Calibri;">1</span><span style="font-family: 宋体;">）信息系统建设单位</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —依照有关管理规定和标准规范，组织开展信息系统安全规划、设计、建设和改扩建工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">—根据信息化项目的安全管理需要，在信息化项目建设过程中， 同步规划、设计、建设、运行、管理信息安全设施；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">—负责信息系统建设过程中与人员、资产、采购、外包有关的 信息安全日常管理。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; （<span style="font-family: Calibri;">2</span><span style="font-family: 宋体;">）信息系统运行维护单位</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;"><span style="font-family: 宋体;">&nbsp;&nbsp; </span></span><span style="font-family: 宋体; font-size: 14px;">—依照有关管理规定和标准规范，制定、落实各项信息安全管 理规定和操作规程；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">—对信息系统安全状况进行监测，针对异常状况采取有效措施， 确保系统稳定可靠运行；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">—负责信息安全事件应急处置相关工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —负责信息系统运行维护过程中与人员、资产、采购、外包有 关的信息安全日常管理。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; （<span style="font-family: Calibri;">3</span><span style="font-family: 宋体;">）信息系统使用单位</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —落实信息安全管理责任人，严格执行安全操作使用规范，确 保系统使用安全；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —按要求落实信息系统等级保护管理相关工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">—负责信息系统使用过程中与人员、资产、采购、外包有关的 信息安全日常管理；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">—配合运行维护单位进行信息安全检查检测和应急处置等工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;"><br  /></span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; <strong>3.4 <span style="font-family: 宋体;">地市级及以下交通运输主管部门</span></strong>
+							</span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; 地市级及以下交通运输主管部门信息安全等级保护工作组织机 构和职责分工参照部省两级执行，决策和监管机构可适当合并。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">&nbsp;&nbsp; 4 <span style="font-family: 宋体;">管理对象</span></span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; 按照“谁主管谁负责，谁使用谁负责”的原则，交通运输行业信 息安全等级保护管理的对象为各级交通运输主管部门建设、管理、使 用的非涉密信息系统，包括以下几个方面的内容：</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">面向公众和企业服务的系统；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; </span><span style="font-family: 宋体; font-size: 14px;">面向行业管理部门业务管理和内部办公事务的系统。 在兼顾全局的同时，应优先加强重要信息系统的管理，即：安全保护等级在第三级以上（含第三级）及以下类型信息系统：</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —</span><span style="font-family: 宋体; font-size: 14px;">市级及以上交通运输行政许可、行政执法、安全监督、应急 处置、收费的重要业务系统；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —</span><span style="font-family: 宋体; font-size: 14px;">面向公众提供市域及以上范围交通运输信息服务的信息系统；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —</span><span style="font-family: 宋体; font-size: 14px;">市级及以上交通运输主管部门的政府网站；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —</span><span style="font-family: 宋体; font-size: 14px;">市级及以上涉及到交通运输投资计划、项目管理、资金安排 和使用的信息系统；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —</span><span style="font-family: 宋体; font-size: 14px;">交通运输跨省联网信息系统。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">&nbsp;&nbsp; 5 <span style="font-family: 宋体;">主要工作任务</span></span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">&nbsp;</span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">&nbsp;&nbsp; 5.1 <span style="font-family: 宋体;">定级备案</span></span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; 1<span style="font-family: 宋体;">．工作内容 定级备案是按照《信息安全等级保护管理办法》，以信息系统的</span></span><span style="font-family: 宋体; font-size: 14px;">重要性和信息系统遭到破坏后对国家安全、社会稳定、人民群众合法 权益的危害程度为依据，确定信息系统的安全保护等级，并向公安机 关进行备案的过程。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; 2<span style="font-family: 宋体;">．职责分工</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; （<span style="font-family: Calibri;">1</span><span style="font-family: 宋体;">）交通运输部信息安全等级保护工作决策、监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —组织制定行业信息系统安全等级保护定级指南；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —指导监督行业信息系统定级和备案工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —组织开展全国联网行业信息系统的定级备案工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; （<span style="font-family: Calibri;">2</span><span style="font-family: 宋体;">）省级及以下交通运输主管部门信息安全等级保护工作决策、 监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —指导监督本地区信息系统定级和备案工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —组织开展本地区联网行业信息系统的定级备案工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; （<span style="font-family: Calibri;">3</span><span style="font-family: 宋体;">）各级交通运输主管部门信息安全等级保护工作执行机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —确定定级对象、确定信息系统安全保护等级、组织专家评审、 按要求报主管部门审批和公安机关审核，具体工作内容应参照相关规 定和标准执行；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; —第二级以上（含第二级）系统<span style="font-family: Calibri;">,</span><span style="font-family: 宋体;">在安全保护等级确定后的 </span><span style="font-family: Calibri;">30</span><span style="font-family: 宋体;">日内</span><span style="font-family: Calibri;">,</span><span style="font-family: 宋体;">按有关要求向公安机关备案。</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">&nbsp;&nbsp; 5.2 <span style="font-family: 宋体;">建设整改</span></span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;"><span style="font-family: 宋体;">&nbsp;&nbsp; 1.</span></span></strong><span style="font-family: 宋体; font-size: 14px;">工作内容 </span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; 建设整改是在信息系统定级基础上，按照信息系统所处等级防护要求进行同步规划、设计和建设，对不满足信息安全保护等级防护要 求的，按照国家相关要求进行整改。信息系统安全等级保护建设和信 息化建设应同步进行，当安全防护需求变化时，应重新调整信息系统 安全保护等级，及时整改。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; 2<span style="font-family: 宋体;">．职责分工</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;（<span style="font-family: Calibri;">1</span><span style="font-family: 宋体;">）交通运输部信息安全等级保护工作决策、监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp;—指导监督行业信息系统安全等级保护安全建设整改工作； </span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —组织开展全国联网行业信息系统的建设整改工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;（<span style="font-family: Calibri;">2</span><span style="font-family: 宋体;">）省级及以下交通运输主管部门信息安全等级保护工作决策、 监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —指导监督本地区信息系统安全等级保护建设整改工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —组织开展本地区联网行业信息系统的建设整改工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;（<span style="font-family: Calibri;">3</span><span style="font-family: 宋体;">）各级交通运输主管部门信息安全等级保护工作执行机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —按上级要求组织开展信息系统安全建设整改工作：明确信息 系统安全技术建设整改需求，制定建设整改方案，同步规划、设计、 建设、管理信息安全设施，建立健全信息安全防护体系；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —开展信息安全管理制度建设整改，包括：人员安全管理制度、系统建设管理制度、系统运维管理制度等。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">&nbsp;&nbsp; 5.3 <span style="font-family: 宋体;">等级测评</span></span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;"><span style="font-family: 宋体;">&nbsp;&nbsp; 1.</span></span></strong><span style="font-family: 宋体; font-size: 14px;">工作内容 </span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; 等级测评是从信息系统安全防护配置情况及整体安全性等方面对信息系统安全等级保护状况进行测试评估的过程。通过等级测评， 掌握信息安全状况，排查隐患和薄弱环节，明确建设整改是否满足需求。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp; 2<span style="font-family: 宋体;">．职责分工</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; （<span style="font-family: Calibri;">1</span><span style="font-family: 宋体;">）交通运输部信息安全等级保护工作决策、监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —建立行业信息安全等级保护测评体系；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —建立行业信息安全等级保护测评工作机制；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —督促和指导行业信息系统等级测评工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —组织开展全国联网信息系统等级测评工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;（<span style="font-family: Calibri;">2</span><span style="font-family: 宋体;">）省级及以下交通运输主管部门信息安全等级保护工作决策、 监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —督促和指导本地区行业信息系统等级测评工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —按照上级要求组织开展本地区内的信息安全等级测评工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —组织开展本地区联网信息系统等级测评工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;（<span style="font-family: Calibri;">3</span><span style="font-family: 宋体;">）各级交通运输主管部门信息安全等级保护工作执行机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —信息系统运行维护单位或使用单位应根据等级保护管理办 法相关要求，选择有资质的专业测评机构进行信息系统等级测评；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —开展等级测评时，应与测评机构积极沟通和交流，共同做好风险控制，避免泄露敏感信息，影响系统正常运行等。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;"><br  /></span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">&nbsp;&nbsp; 5.4 <span style="font-family: 宋体;">风险评估</span></span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">&nbsp;&nbsp; 1.工作内容 </span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">&nbsp;&nbsp; </span></strong><span style="font-family: 宋体; font-size: 14px;">风险评估是指依据有关标准，对信息系统及由其处理、传输和存储的信息的保密性、完整性和可用性等安全属性进行评价的过程，它 要评估资产面临的威胁以及威胁利用脆弱性导致信息安全事件的可 能性，并结合信息安全事件所涉及的资产价值来判断信息安全事件一旦发生对组织造成的影响。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">&nbsp;&nbsp;2<span style="font-family: 宋体;">．职责分工</span></span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;（<span style="font-family: Calibri;">1</span><span style="font-family: 宋体;">）交通运输部信息安全等级保护工作决策、监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —督促行业信息系统建设单位或使用单位开展风险评估工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;（<span style="font-family: Calibri;">2</span><span style="font-family: 宋体;">）省级及以下交通运输主管部门信息安全等级保护工作决策、 监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —督促本地区信息系统建设单位或使用单位开展风险评估工 作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;（<span style="font-family: Calibri;">3</span><span style="font-family: 宋体;">）各级交通运输主管部门信息安全等级保护工作执行机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; —结合本单位信息系统应用特点，自主或委托专业机构开展系 统风险评估工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">&nbsp; 5.5 <span style="font-family: 宋体;">信息通报</span></span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;"><span style="font-family: 宋体;">&nbsp;&nbsp;1.</span></span></strong><span style="font-family: 宋体; font-size: 14px;">工作内容 </span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">信息通报是按照国家信息安全管理有关要求，对国家信息安全情报和行业信息系统安全状况进行汇总、分析、研判，并在一定范围内 予以通报。通报工作是加强行业信息安全资源共享和协调、提升行业 信息安全态势感知能力、提高信息安全事件预警防范能力的重要手段。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; 2.</span><span style="font-family: 宋体; font-size: 14px;"><span style="font-family: 宋体;">职责分工</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;（<span style="font-family: Calibri;">1</span><span style="font-family: 宋体;">）交通运输部信息安全等级保护工作决策、监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;—领导、组织、指导、协调、监督行业信息安全信息的通报工 作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;—组织制定行业信息安全信息通报制度和工作方案；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;—向国家有关部门报送行业信息安全信息，向行业通报国家及 行业信息安全动态信息；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;—组织开展行业信息安全信息的分析、研判、预警、协调、服 务等工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;（<span style="font-family: Calibri;">2</span><span style="font-family: 宋体;">）省级及以下交通运输主管部门信息安全等级保护工作决策、 监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;—领导、指导、协调、监督、组织开展本地区信息安全信息的通报工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;—按要求及时报送本地区信息安全态势；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;—接受行业信息安全通报信息，并按要求组织本地区预警防范处置工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;—开展本地区网络与信息安全信息分析、研判、协调、服务等 工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;（<span style="font-family: Calibri;">3</span><span style="font-family: 宋体;">）各级交通运输主管部门信息安全等级保护工作执行机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;—运行维护单位或使用单位发现信息安全事件后应及时报告 本级决策、监管机构；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;—按要求对信息安全预警进行相应的防范处置。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">&nbsp; 5.6 <span style="font-family: 宋体;">监督检查</span></span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;"><span style="font-family: 宋体;">&nbsp; 1.</span></span></strong><span style="font-family: 宋体; font-size: 14px;">工作内容 </span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">监督检查是对行业信息安全管理工作开展和落实情况进行检查，督促、检查安全设施建设、落实安全措施、建立并落实安全管理制度、 落实安全责任、落实责任部门和人员，全面排查安全隐患和安全漏洞， 分析评估信息安全状况和防护水平。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp; 2<span style="font-family: 宋体;">．职责分工</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">1</span><span style="font-family: 宋体;">）交通运输部信息安全等级保护工作决策、监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—指导、协调、监督行业信息安全检查工作；</span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—组织开展行业信息安全检查工作，制定年度检查工作方案， 掌握行业信息安全总体状况和威胁；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—组织开展行业重要信息系统抽查。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">2</span><span style="font-family: 宋体;">）省级及以下交通运输主管部门信息安全等级保护工作决策、 监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—指导、协调、监督本地区信息安全检查工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—根据上级要求组织开展本地区信息安全检查工作，制定检查 工作方案，掌握本地区行业信息安全总体状况和威胁，完善安全措施，总结本地区信息安全检查情况，完成检查报告并上报；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—组织开展 本地区重要信息系统抽查工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">3</span><span style="font-family: 宋体;">）各级交通运输主管部门信息安全等级保护工作执行机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—监测网络边界、信息系统、门户网站、电子邮件、终端计算 机和存储介质等的安全状况，并针对异常状况及时采取有效措施；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—按要求落实信息安全检查工作，重点检查办公系统、业务系 统、门户网站的安全防护情况；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—按要求采用必要的技术检测手段对信息系统进行安全检测；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—落实安全检查过程中的保密管理和风险控制，严格检查人员、 有关文档和数据的安全保密管理，制定安全检查应急预案，确保被检 查信息系统的正常运行；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—应对安全检查中发现的问题进行分析研判，制定整改措施并 及时整改。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">5.7 <span style="font-family: 宋体;">应急管理</span></span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">1. </span><span style="font-family: 宋体; font-size: 14px;">工作内容</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;"></span><span style="font-family: 宋体; font-size: 14px;">应急管理是通过建立必要的应对机制，采取一系列必要措施，在信息安全事件的事前预防、事中处置和事后恢复过程中保障信息安全 的有关活动，以最大限度的减少由于信息安全受到侵害所造成的损失。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">2<span style="font-family: 宋体;">．职责分工</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">1</span><span style="font-family: 宋体;">）交通运输部信息安全等级保护工作决策、监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—组织、指导、协调、监督行业信息安全应急管理工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—建立健全行业信息安全应急管理工作机制；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—组织编制行业信息安全应急预案编制指南；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—监督指导行业开展应急演练工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">2</span><span style="font-family: 宋体;">）省级及以下交通运输主管部门信息安全等级保护工作决策、 监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—组织、指导、协调、监督本地区信息安全应急管理工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—建立健全本地区信息安全应急工作机制；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—组织编制和评估本地区信息安全事件应急预案，组织开展应 急预案的宣贯；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—定期组织开展本地区信息安全应急演练，检验应急预案的可操作性，并将演练情况报上级决策、监管机构。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">3</span><span style="font-family: 宋体;">）各级交通运输主管部门信息安全等级保护工作执行机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—运行维护单位或使用单位应根据业务实际需要对重要数据 和业务系统进行备份；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—运行维护单位或使用单位应做好信息安全应急物资保障，确保必要的备机、备件等资源到位；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—信息安全事件发生后，相关人员应注意保护事件现场，采取 必要的控制措施，及时研判信息安全事件的类型和级别，调查事件原 因，并及时报告。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—按上级要求定期开展信息安全应急演练。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">5.8 <span style="font-family: 宋体;">教育培训</span></span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;"><span style="font-family: 宋体;">1.</span></span></strong><span style="font-family: 宋体; font-size: 14px;">工作内容</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;"></span><span style="font-family: 宋体; font-size: 14px;">教育培训包括两方面内容：一是通过对行业信息系统用户的安全意识和技能的培训教育，提升用户的信息安全防范意识、知识和操作 水平；二是开展行业信息安全专业人员队伍建设，对相关岗位人员进 行专业资质认证管理，实现管理的专业化和长效化。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">2<span style="font-family: 宋体;">．职责分工</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">1</span><span style="font-family: 宋体;">）交通运输部信息安全等级保护工作决策、监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—建立行业信息安全教育培训制度，组织开展行业信息安全教 育培训工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—提出行业信息安全管理和技术重要岗位任职资格培训要求。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">2</span><span style="font-family: 宋体;">）省级及以下交通运输主管部门信息安全等级保护工作决策、 监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—制定本地区教育培训工作方案，组织开展本地区信息安全教 育培训工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—总结本地区信息安全教育培训情况，评估教育培训效果，改进教育培训工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—监督指导本地区落实行业信息安全管理和技术重要岗位任 职资格培训要求；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">3</span><span style="font-family: 宋体;">）各级交通运输主管部门信息安全等级保护工作执行机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—建设单位应在信息系统交付时，对有关人员进行使用和运相关信息安全培训；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—运行维护单位或使用单位应定期开展信息安全管理和技术 人员专业技能培训，定期开展信息系统用户安全意识和操作规程培训；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—运行维护单位或使用单位应记录并保存信息安全教育培训、 评估情况和结果；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—落实行业信息安全管理和技术重要岗位任职资格培训要求。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">5.9 <span style="font-family: 宋体;">绩效评估</span></span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;"><span style="font-family: 宋体;">1.</span></span></strong><span style="font-family: 宋体; font-size: 14px;">工作内容 </span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;"></span><span style="font-family: 宋体; font-size: 14px;">绩效评估是指为激励、引导和促进行业各单位开展信息安全等级保护工作，围绕行业信息安全管理目标，采用科学方法，对各有关单 位信息安全管理工作过程及效果进行评估。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">2.</span><span style="font-family: 宋体; font-size: 14px;"><span style="font-family: 宋体;">职责分工</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">1</span><span style="font-family: 宋体;">）交通运输部信息安全等级保护工作决策、监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—建立行业信息安全等级保护管理绩效评估体系；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—组织制定并实施行业信息安全等级保护管理绩效评估工作 方案。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">2</span><span style="font-family: 宋体;">）省级及以下交通运输主管部门信息安全等级保护工作决策、 监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—建立本地区行业信息安全等级保护管理绩效评估体系；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—组织开展本地区信息安全等级保护管理绩效评估工作。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">3</span><span style="font-family: 宋体;">）各级交通运输主管部门信息安全等级保护工作执行机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—配合做好信息安全等级保护管理绩效评估工作，对绩效评估 中发现的问题及时整改。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">5.10 </span></strong><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">标准制定</span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">1.</span></strong><span style="font-family: 宋体; font-size: 14px;">工作内容 </span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">为加强行业信息安全等级保护管理，协调统一行业信息安全等级保护工作开展，在遵循国家信息安全等级保护管理有关法律、法规、政策和标准的基础上，根据行业实际需求，制定行业信息安全等级保 护管理制度和标准规范。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">2.</span><span style="font-family: 宋体; font-size: 14px;"><span style="font-family: 宋体;">职责分工</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">1</span><span style="font-family: 宋体;">）交通运输部信息安全等级保护工作决策、监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—组织行业落实国家信息安全等级保护管理有关制度和标准 规范；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—建立行业信息安全等级保护管理制度及标准规范体系；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—提出行业信息安全等级保护管理标准制修订计划，组织开展 标准制修订工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—组织研究制定行业信息安全等级保护管理相关制度。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">（<span style="font-family: Calibri;">2</span><span style="font-family: 宋体;">）省级及以下交通运输主管部门信息安全等级保护工作决策、 监管机构</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—组织本地区落实国家和行业信息安全等级保护管理有关制 度和标准规范；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—根据需要提出本地区信息安全等级保护管理标准制修订计划，组织开展地方标准制修订工作；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">—组织研究制定本地区信息安全等级保护管理相关制度。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;"></span><span style="font-family: 宋体; font-size: 14px;">（3）各级交通运输主管部门信息安全等级保护工作执行机构</span><span style="font-family: 宋体; font-size: 14px;">、</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;"></span><span style="font-family: 宋体; font-size: 14px;">—执行国家和行业信息安全等级保护管理有关制度和标准规范。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">6 <span style="font-family: 宋体;">编制依据</span></span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px; font-weight: bold;"><span style="font-family: 宋体;">1.</span></span><span style="font-family: 宋体; font-size: 14px;"><span style="font-family: 宋体;">《中华人民共和国计算机信息系统安全保护条例》（国务院</span><span style="font-family: Calibri;">147 </span><span style="font-family: 宋体;">号令，</span><span style="font-family: Calibri;">1994 </span><span style="font-family: 宋体;">年 </span><span style="font-family: Calibri;">2 </span><span style="font-family: 宋体;">月 </span><span style="font-family: Calibri;">18 </span><span style="font-family: 宋体;">日）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;"><span style="font-family: 宋体;">2.</span></span><span style="font-family: 宋体; font-size: 14px;"><span style="font-family: 宋体;">《国务院关于大力推进信息化发展和切实保障信息安全的若 干意见》（国发</span><span style="font-family: Calibri;">[2012]23 </span><span style="font-family: 宋体;">号）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">3.<span style="font-family: 宋体;">《信息安全等级保护管理办法》（公通字</span><span style="font-family: Calibri;">[2007]43 </span><span style="font-family: 宋体;">号）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">4.<span style="font-family: 宋体;">《关于推动信息安全等级保护测评体系建设和开展等级测评 工作的通知》（公信安</span><span style="font-family: Calibri;">[2010]303 </span><span style="font-family: 宋体;">号）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">5.<span style="font-family: 宋体;">《关于信息安全等级保护工作的实施意见》（公通字</span><span style="font-family: Calibri;">[2004]66</span><span style="font-family: 宋体;">号）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">6.<span style="font-family: 宋体;">《关于进一步开展交通运输行业信息安全等级保护工作的通 知》（厅科技字</span><span style="font-family: Calibri;">[2012]120 </span><span style="font-family: 宋体;">号）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">7.<span style="font-family: 宋体;">《关于开展全国重要信息系统安全等级保护定级工作的通知》（公通字</span><span style="font-family: Calibri;">[2007]861 </span><span style="font-family: 宋体;">号）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">8.<span style="font-family: 宋体;">《信息安全等级保护备案实施细则》（公信安</span><span style="font-family: Calibri;">[2007]1360 </span><span style="font-family: 宋体;">号）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">9.<span style="font-family: 宋体;">《关于开展信息安全等级保护安全建设整改工作的指导意见》（公信安</span><span style="font-family: Calibri;">[2009]1429 </span><span style="font-family: 宋体;">号）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">10.<span style="font-family: 宋体;">《网络与信息安全信息通报暂行办法》（信安通</span><span style="font-family: Calibri;">[2003]10 </span><span style="font-family: 宋体;">号）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">11.<span style="font-family: 宋体;">《工业和信息化部关于印发</span><span style="font-family: Calibri;">&lt;2013 </span><span style="font-family: 宋体;">年重点领域信息安全检查 工作方案</span><span style="font-family: Calibri;">&gt;</span><span style="font-family: 宋体;">的函》</span><span style="font-family: Calibri;">(</span><span style="font-family: 宋体;">工信部协函</span><span style="font-family: Calibri;">[2013]259 </span><span style="font-family: 宋体;">号</span><span style="font-family: Calibri;">)</span><span style="font-family: 宋体;">；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">12.<span style="font-family: 宋体;">《关于印发公路水路交通运输信息化“十二五”发展规划的 通知》（交规划发</span><span style="font-family: Calibri;">[2011]192 </span><span style="font-family: 宋体;">号）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">13.<span style="font-family: 宋体;">《国家电子政务外网安全等级保护基本要求（试行）》（国家电子政务外网管理中心，</span><span style="font-family: Calibri;">2011 </span><span style="font-family: 宋体;">年 </span><span style="font-family: Calibri;">12 </span><span style="font-family: 宋体;">月）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">14.<span style="font-family: 宋体;">《计算机信息系统安全保护等级划分准则》（</span><span style="font-family: Calibri;">GB 17859-1999</span><span style="font-family: 宋体;">）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">15.<span style="font-family: 宋体;">《 信息安全技术信息安全风险评估规范》 </span><span style="font-family: Calibri;">(GB/T</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">29084-2007)<span style="font-family: 宋体;">；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">16.<span style="font-family: 宋体;">《信息技术</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">安全技术信息安全事件管理指南 （<span style="font-family: Calibri;">GB/Z</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">20985-2007<span style="font-family: 宋体;">）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">17.<span style="font-family: 宋体;">《信息安全技术 信息系统安全等级保护基本要求》（</span><span style="font-family: Calibri;">GB/T</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">22239-2008<span style="font-family: 宋体;">）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">18.<span style="font-family: 宋体;">《信息安全技术 信息系统安全等级保护定级指南》（</span><span style="font-family: Calibri;">GB/T</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">22240-2008<span style="font-family: 宋体;">）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">19.<span style="font-family: 宋体;">《信息安全技术</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">信息安全应急响应计划规范》（<span style="font-family: Calibri;">GB/T</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">24363-2009<span style="font-family: 宋体;">）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">20.<span style="font-family: 宋体;">《信息安全技术 信息系统安全等级保护实施指南》（</span><span style="font-family: Calibri;">GB/T</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">25058-2010<span style="font-family: 宋体;">）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">21.<span style="font-family: 宋体;">《信息安全技术 信息系统安全等级保护测评要求》（</span><span style="font-family: Calibri;">GB/T</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">28448-2012<span style="font-family: 宋体;">）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">22.<span style="font-family: 宋体;">《信息技术</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">安全技术信息安全管理实用规则》（<span style="font-family: Calibri;">GB/T</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">22081-2008<span style="font-family: 宋体;">）；</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">7</span></strong><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">&nbsp;</span></strong><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">保障措施</span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">— 加强组织领导。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">各单位要高度重视信息安全等级保护工作， 加强组织领导，明确责任分工，完善协同机制，将信息安全等级保护 作为信息化建设重要内容之一，制定工作方案和实施步骤，精心组织 实施，认真落实各项工作任务，努力提升信息安全保障水平。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">— </span><span style="font-family: 宋体; font-size: 14px;">加大资金投入。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;"></span><span style="font-family: 宋体; font-size: 14px;">多方筹集资金，建立稳定的信息安全等级保 护工作资金保障渠道，确保必要的信息安全基础设施建设、安全系统 运维、等级保护测评、安全风险评估等资金投入，保障信息安全等级 保护工作的顺利开展。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">— 加强能力建设。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;"></span><span style="font-family: 宋体; font-size: 14px;">重视技术研发和应用，加强面向行业应用的 信息安全管理技术研发，建立行业信息安全管理服务平台，提升信息 安全管理工作效能；培养、引进和利用好高层次、高技能信息安全专业人员，逐步建立行业信息安全人员评价与激励机制。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">— </span><span style="font-family: 宋体; font-size: 14px;">加强第三方服务体系建设。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;"></span><span style="font-family: 宋体; font-size: 14px;">积极引导并合理利用社会专业安 全技术服务力量，建立健全信息安全合作机制，加强行业信息安全咨 询、等级测评、风险评估、应急处置、技术支持、教育培训等第三方 专业服务体系建设。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px;">8</span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">术语和定义</span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">下列术语和定义适用于本总则。</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">1. <span style="font-family: 宋体;">信息系统：信息系统是指由计算机及其相关和配套的设备、 设施构成的，按照一定的应用目标和规则对信息进行存储、传输、处 理的系统或者网络。（关于印发《关于信息安全等级保护工作的实施 意见》的通知（公通字</span><span style="font-family: Calibri;">[2004]66 </span><span style="font-family: 宋体;">号））</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">2. <span style="font-family: 宋体;">信息资产：信息系统安全策略中所保护的信息或资源。（《信 息技术 &nbsp;安全技术 &nbsp;信息技术安全性评估准则 &nbsp;第 </span><span style="font-family: Calibri;">1 </span><span style="font-family: 宋体;">部分：简介和一般 模型》（</span><span style="font-family: Calibri;">GB/T 18336.1-2001</span><span style="font-family: 宋体;">））</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">3. <span style="font-family: 宋体;">信息系统安全：信息系统及其所存储、传输和处理的信息的 保密性、完整性和可用性的表征。（《计算机信息系统安全保护等级划 分准则》（</span><span style="font-family: Calibri;">GB 17859-1999</span><span style="font-family: 宋体;">））</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">4. <span style="font-family: 宋体;">信息安全等级保护：信息安全等级保护是指对国家秘密信息、 法人和其他组织及公民的专有信息以及公开信息和存储、传输、处理 这些信息的信息系统分等级实行安全保护，对信息系统中使用的信息 安全产品实行按等级管理，对信息系统中发生的信息安全事件分等级 响应、处置。（关于印发《关于信息安全等级保护工作的实施意见》 的通知（公通字</span><span style="font-family: Calibri;">[2004]66 </span><span style="font-family: 宋体;">号））</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">5. <span style="font-family: 宋体;">保密性：这一性质使信息不泄漏给非授权的个人、实体或进程，不为其所用。（《信息处理系统 开放系统互连 基本参考模型 第</span><span style="font-family: Calibri;">2</span><span style="font-family: 宋体;">部分：安全体系结构 &nbsp;电子类标准》（</span><span style="font-family: Calibri;">GB/T 9387.2-1995</span><span style="font-family: 宋体;">））</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">6. <span style="font-family: 宋体;">完整性：这一性质表明数据没有遭受以非授权方式所作的篡改或破坏。（《信息处理系统 &nbsp;开放系统互连 &nbsp;基本参考模型 &nbsp;第 </span><span style="font-family: Calibri;">2 </span><span style="font-family: 宋体;">部分： 安全体系结构 &nbsp;电子类标准》（</span><span style="font-family: Calibri;">GB/T 9387.2-1995</span><span style="font-family: 宋体;">））</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">7. <span style="font-family: 宋体;">可用性：根据授权实体的请求可被访问与使用。（《信息处理 系统 &nbsp;开放系统互连 &nbsp;基本参考模型 &nbsp;第 </span><span style="font-family: Calibri;">2 </span><span style="font-family: 宋体;">部分：安全体系结构 &nbsp;电子类 标准》（</span><span style="font-family: Calibri;">GB/T 9387.2-1995</span><span style="font-family: 宋体;">））</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">8. <span style="font-family: 宋体;">威胁：能够通过未授权访问、毁坏、揭露、数据修改和</span><span style="font-family: Calibri;">/</span><span style="font-family: 宋体;">或拒 绝服务对系统造成潜在危害的任何环境或事件。（《信息安全技术 &nbsp;信 息安全风险评估规范》（</span><span style="font-family: Calibri;">GB/T 20984-2007</span><span style="font-family: 宋体;">））</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">9. <span style="font-family: 宋体;">脆弱性：在信息系统、系统安全程序、管理控制、物理设计、 内部控制或实现中的，可能被攻击者利用来获得未授权的信息或破坏 关键处理的弱点。（《信息安全技术 &nbsp;信息安全风险评估规范》（</span><span style="font-family: Calibri;">GB/T20984-2007</span><span style="font-family: 宋体;">））</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">10.<span style="font-family: 宋体;">信息安全风险：人为或自然的威胁利用信息系统及其管理体 系中存在的脆弱性导致安全事件的发生及其对组织造成的影响。（《信息安全技术 &nbsp;信息安全风险评估规范》（</span><span style="font-family: Calibri;">GB/T 20984-2007</span><span style="font-family: 宋体;">））</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">11.<span style="font-family: 宋体;">等级测评：确定信息系统安全保护能力是否达到相应等级基本要求的过程 。</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">（《计算机信息系统安全保护等级划分准则》（<span style="font-family: Calibri;">GB</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">17859-1999<span style="font-family: 宋体;">））</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">12.<span style="font-family: 宋体;">风险评估：依据有关信息安全技术与管理标准，对信息系统 及由其处理、传输和存储的信息的保密性、完整性和可用性等安全属 性进行评价的过程。（《信息安全技术 &nbsp;信息安全风险评估规范》（</span><span style="font-family: Calibri;">GB/T</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">20984-2007<span style="font-family: 宋体;">））</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">13.<span style="font-family: 宋体;">信息安全事件：由于自然或人为以及软硬件本身缺陷或故障 的原因，对信息系统造成危害，或者信息系统内发生对社会造成负面 影响的事件。（《信息安全技术 &nbsp;信息安全事件分类分级指南》（</span><span style="font-family: Calibri;">GB/Z</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">20986-2007<span style="font-family: 宋体;">））</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">14.<span style="font-family: 宋体;">应急响应：组织为了应对突发</span><span style="font-family: Calibri;">/</span><span style="font-family: 宋体;">重大信息安全事件的发生所做 的准备，以及在实践发生后所采取的措施。（《信息安全技术 &nbsp;信息安 全应急响应计划规范》（</span><span style="font-family: Calibri;">GB/T 24363-2009</span><span style="font-family: 宋体;">））</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">15.<span style="font-family: 宋体;">第三方：就所涉及的问题被公认为是独立于有关各方的个人或机构 。（《信息技术 安全技术 信息安全理实用规则》（</span><span style="font-family: Calibri;">GB/T</span></span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">22081-2008<span style="font-family: 宋体;">））</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">9</span></strong><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">&nbsp;</span></strong><strong><span style="font-family: 宋体; font-size: 14px; font-weight: bold;">附则</span></strong></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">1.</span><span style="font-family: 宋体; font-size: 14px;">&nbsp;</span><span style="font-family: 宋体; font-size: 14px;">《总则》由交通运输部科技司负责解释；</span></p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;">2. <span style="font-family: 宋体;">《总则》自发布之日起执行。</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;"><span style="font-family: 宋体;">&nbsp;</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;"><span style="font-family: 宋体;">&nbsp;&nbsp;&nbsp; </span></span><span style="font-family: 宋体; font-size: 14px;"><span style="font-family: 宋体;">交通运输部</span></span>
+						</p>
+						<p style="color: rgb(0, 0, 0); font-family: Calibri; font-size: 14px; font-style: normal; font-weight: normal; margin-top: 0px; margin-bottom: 0px;"><span style="font-family: 宋体; font-size: 14px;"><span style="font-family: 宋体;">&nbsp;&nbsp;&nbsp; </span></span><span style="font-family: 宋体; font-size: 14px;"><span style="font-family: 宋体;">2013年8月</span></span>
+						</p>
+						<p><br /></p>
+
+					</div>
+					<div class="col-md-7 contact-right">
+						<form>
+							<!--<input type="text" placeholder="Name" required=" ">
+						<input type="text" placeholder="Email Address" required=" ">
+						<input type="text" placeholder="Phone Number" required=" ">
+						<input type="text" placeholder="Subject" required=" ">
+						<div class="clearfix"> </div>
+						<textarea placeholder="Type Your Text Here...." required=" "></textarea>
+						<input type="submit" value="Submit">
+						<input type="reset" value="Clear">-->
+						</form>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--<div class="contact-bottom">
+			<div class="container">
+				<div class="contact-bottom-grids">
+					<div class="col-md-4 contact-bottom-grid">
+						<div class="dot">
+							<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+						</div>
+						<h4>浙江杭州市余杭区<span>莫干山路交通学院创业楼108</span></h4>
+					</div>
+					<div class="col-md-4 contact-bottom-grid">
+						<div class="dot">
+							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+						</div>
+						<a href="mailto:info@example.com">admin@jt-safety.com</a>
+					</div>
+					<div class="col-md-4 contact-bottom-grid">
+						<div class="dot">
+							<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+						</div>
+						<h4>0571-88184006</h4>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>-->
+		<!-- //contact -->
+		<!-- footer-top -->
+		<div class="footer-top" style="margin-top: -120px;">
+			<div class="container">
+				<div class="footer-grids">
+					<!--<figure class="effect-winston">
+					<img src="images/1.jpg" alt="" class="img-responsive one" />
+					<figcaption> 
+						<h2>Jolly <span>Winston</span></h2>
+						<p>There are many variations of passages of Lorem Ipsum available.</p>
+						<ul class="social_icons">
+							<li><a href="#" class="f1"></a></li>
+							<li><a href="#" class="f2"></a></li>
+							<li><a href="#" class="f3"></a></li>
+						</ul>
+					</figcaption>			
+				</figure>
+				<figure class="effect-winston">
+					<img src="images/3.jpg" alt="" class="img-responsive one" />
+					<figcaption>
+						<h2>Micheal <span>James</span></h2>
+						<p>There are many variations of passages of Lorem Ipsum available.</p>
+						<ul class="social_icons">
+							<li><a href="#" class="f1"></a></li>
+							<li><a href="#" class="f2"></a></li>
+							<li><a href="#" class="f3"></a></li>
+						</ul>
+					</figcaption>			
+				</figure>
+				<figure class="effect-winston">
+					<img src="images/5.jpg" alt="" class="img-responsive one" />
+					<figcaption>
+						<h2>Adom <span>Williums</span></h2>
+						<p>There are many variations of passages of Lorem Ipsum available.</p>
+						<ul class="social_icons">
+							<li><a href="#" class="f1"></a></li>
+							<li><a href="#" class="f2"></a></li>
+							<li><a href="#" class="f3"></a></li>
+						</ul>
+					</figcaption>			
+				</figure>-->
+				</div>
+			</div>
+		</div>
+		<script src="../js/vueanddata/accidentdata.js"></script>
+		<!-- //footer-top -->
+		<!-- footer -->
+		<div class="footer">
+			<div class="container">
+				<h3>订阅我们的新闻</h3>
+				<p class="para">在下方输入框输入您的邮箱账号进行订阅</p>
+				<div class="footer-contact">
+					<form>
+						<input type="text" placeholder="输入您的邮箱" required=" ">
+						<input type="submit" value="">
+					</form>
+				</div>
+				<div class="footer-grids">
+					<div class="col-md-3 footer-grid">
+						<p>浙江省 余杭区莫干山路1515号 交通学院创业楼108
+							<a href="mailto:info@example.com">admin@jt-safety.com</a>
+							<p>Phone : 0571-88184006</p>
+							<p>运营支持：杭州交赞科技有限公司</p>
+					</div>
+					<div class="col-md-2 footer-grid">
+						<!--<ul>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#">运营支持：杭州交赞科技有限公司</a></li>
+						<li><a href="#">Terms</a></li>
+					</ul>-->
+					</div>
+					<div class="col-md-2 footer-grid">
+						<!--<ul>
+						<li><a href="#">Download</a></li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">Documents</a></li>
+					</ul>-->
+					</div>
+					<div class="col-md-2 footer-grid">
+						<!--<ul>
+						<li><a href="#">Venenatis</a></li>
+						<li><a href="#">Extras</a></li>
+						<li><a href="#">Forums</a></li>
+					</ul>-->
+					</div>
+					<div class="col-md-3 footer-grid">
+
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="footer-copy">
+					<p>Copyright &copy; 2016.浙江交通安全教育网 All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+		<!-- //footer -->
+		<!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear'
+				};
+
+				$().UItoTop({
+					easingType: 'easeOutQuart'
+				});
+
+			});
+		</script>
+
+		<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		<!--end scroll_top_btn -->
+		<!-- for bootstrap working -->
+		<script type="text/javascript" src="../js/bootstrap-3.1.1.min.js"></script>
+		<script src="../js/vueanddata/rulesdata.js"></script>
+		<!-- //for bootstrap working -->
+
 	</body>
+
 </html>

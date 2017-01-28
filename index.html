@@ -197,7 +197,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+
+				<div class="col-lg-4" id="rules">
 					<div class="panel panel-primary">
 						<div class="panel-heading" style="display: flex;flex-direction: row;align-items: center;justify-content: space-around;">
 							<h3 class="panel-title"> <img src="images/zhengce.png"/> 政策标准</h3>
@@ -206,17 +207,17 @@
 						</div>
 						<div class="panel-body">
 							<ul style="list-style: none;">
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident1.html">{{new1.title}}</a></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident2.html">{{new2.title}}</a></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident3.html">{{new3.title}}</a></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident4.html">{{new4.title}}</a></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident5.html">{{new5.title}}</a></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a href="accident_pages/accident6.html">{{new6.title}}</a></span></li>
+								<li style="overflow:hidden;"><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules1.href" style="overflow: hidden;">{{rules1.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules2.href">{{rules2.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules3.href">{{rules3.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules4.href">{{rules4.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules5.href">{{rules5.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules6.href">{{rules6.title}}</a></span></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-
+		<script src="js/vueanddata/rulesdata.js"></script>
 				<div class="col-lg-4">
 					<div class="panel panel-primary">
 						<div class="panel-heading" style="display: flex;flex-direction: row;align-items: center;justify-content: space-around;">
@@ -512,7 +513,8 @@
 		<!-- for bootstrap w<br />orking -->
 		<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 		<!-- //for bootstrap working -->
-		<script src="js/vueanddata/accident	data.js"></script>
+		<script src="js/vueanddata/accidentdata.js"></script>
+		<script src="js/vueanddata/newsdata.js"></script>
 
 	</body>
 
