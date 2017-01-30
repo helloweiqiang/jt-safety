@@ -23,6 +23,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<!---strat-slider---->
 		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/vueanddata/vue.js"></script>
 		<!---//-slider---->
 	</head>
 
@@ -127,9 +128,8 @@
 					</div>
 					<div class="col-md-6 about-grd">
 						<h3>杨紫琼出席第九届亚洲道路交通安全研讨会</h3>
-						<p class="leap">5月24日，第九届亚洲道路交通安全研讨会在北京开幕。200多位代表将在3天的会议中，就交通安全管理中的各种挑战以及如何实现道路安全目标开展讨论。
-						每年125万人因为交通事故失去生命，超过5000万人伤残，每天多达500名儿童死在路上，道路交通事故已经成为15岁至29岁人群的头号杀手。
-   推广道路交通安全实践干预项目有助于减少交通事故的发生。5月24日在北京开幕的第九届亚洲交通安全研讨会上，全球道路交通安全合作伙伴（GRSP）总裁白瑞·沃森博士、国际道路风险评估机构（IRAP）总裁罗布·麦考尼，中国红十字会副会长、中国红十字基金会理事长郭长江和来自亚太地区国家的200余名代表一起呼吁激发更多支持和行动，实现“至2020年将全球道路交通事故伤亡减半”的联合国道路安全十年行动计划。</p>
+						<p class="leap">5月24日，第九届亚洲道路交通安全研讨会在北京开幕。200多位代表将在3天的会议中，就交通安全管理中的各种挑战以及如何实现道路安全目标开展讨论。 每年125万人因为交通事故失去生命，超过5000万人伤残，每天多达500名儿童死在路上，道路交通事故已经成为15岁至29岁人群的头号杀手。 推广道路交通安全实践干预项目有助于减少交通事故的发生。5月24日在北京开幕的第九届亚洲交通安全研讨会上，全球道路交通安全合作伙伴（GRSP）总裁白瑞·沃森博士、国际道路风险评估机构（IRAP）总裁罗布·麦考尼，中国红十字会副会长、中国红十字基金会理事长郭长江和来自亚太地区国家的200余名代表一起呼吁激发更多支持和行动，实现“至2020年将全球道路交通事故伤亡减半”的联合国道路安全十年行动计划。
+						</p>
 						<div class="more">
 							<a href="single.html" class="type-1">
 								<!--<span> More Info... </span>-->
@@ -195,45 +195,129 @@
 		</div>-->
 		<!-- //about -->
 		<!-- footer-top -->
-		<div class="footer-top">
+		<div class="footer-top" id="video">
 			<div class="container">
 				<div class="footer-grids">
 					<figure class="effect-winston">
-					<img src="images/tesla.jpg" alt="" class="img-responsive one" />
-					<figcaption> 
-						<h2>Tesla</h2>
-						<p>特斯拉荷兰发生交通事故，电池或飞出车身</p>
-						<ul class="social_icons">
-							<li><a href="#" class="f1"></a></li>
-							<li><a href="#" class="f2"></a></li>
-							<li><a href="#" class="f3"></a></li>
-						</ul>
-					</figcaption>			
-				</figure>
-				<figure class="effect-winston">
-					<img src="images/dibai.jpg" alt="" class="img-responsive one" />
-					<figcaption>
-						<h2>迪拜</h2>
-						<p>免费乘坐！首条无人驾驶公交线路迪拜开通</p>
-						<ul class="social_icons">
-							<li><a href="#" class="f1"></a></li>
-							<li><a href="#" class="f2"></a></li>
-							<li><a href="#" class="f3"></a></li>
-						</ul>
-					</figcaption>			
-				</figure>
-				<figure class="effect-winston">
-					<img src="images/xiaobe.jpg" alt="" class="img-responsive one" />
-					<figcaption>
-						<h2>贝克汉姆</h2>
-						<p>小贝车祸现场遭曝光 豪车右前侧凹陷严重</p>
-						<ul class="social_icons">
-							<li><a href="#" class="f1"></a></li>
-							<li><a href="#" class="f2"></a></li>
-							<li><a href="#" class="f3"></a></li>
-						</ul>
-					</figcaption>			
-				</figure>
+						<img :src="video1.img" alt="" class="img-responsive one" />
+						<figcaption>
+							<h2>{{video1.title}}</h2>
+							<p>{{video1.main1}}</p>
+							<a href="video_pages/video1.html">
+								<ul class="social_icons">
+									<li>
+										<a href="#" class="f1"></a>
+									</li>
+									<li>
+										<a href="#" class="f2"></a>
+									</li>
+									<li>
+										<a href="#" class="f3"></a>
+									</li>
+								</ul>
+							</a>
+						</figcaption>
+					</figure>
+					<figure class="effect-winston">
+						<img :src="video2.img" alt="" class="img-responsive one" />
+						<figcaption>
+							<h2>{{video2.title}}</h2>
+							<p>{{video2.main1}}</p>
+							<a href="video_pages/video2.html">
+								<ul class="social_icons">
+									<li>
+										<a href="#" class="f1"></a>
+									</li>
+									<li>
+										<a href="#" class="f2"></a>
+									</li>
+									<li>
+										<a href="#" class="f3"></a>
+									</li>
+								</ul>
+							</a>
+						</figcaption>
+					</figure>
+					<figure class="effect-winston">
+						<img :src="video3.img" alt="" class="img-responsive one" />
+						<figcaption>
+							<h2>{{video3.title}}</h2>
+							<p>{{video3.main1}}</p>
+							<a href="video_pages/video3.html">
+								<ul class="social_icons">
+									<li>
+										<a href="#" class="f1"></a>
+									</li>
+									<li>
+										<a href="#" class="f2"></a>
+									</li>
+									<li>
+										<a href="#" class="f3"></a>
+									</li>
+								</ul>
+							</a>
+						</figcaption>
+					</figure>
+					<figure class="effect-winston">
+						<img :src="video4.img" alt="" class="img-responsive one" />
+						<figcaption>
+							<h2>{{video4.title}}</h2>
+							<p>{{video4.main1}}</p>
+							<a href="video_pages/video4.html">
+								<ul class="social_icons">
+									<li>
+										<a href="#" class="f1"></a>
+									</li>
+									<li>
+										<a href="#" class="f2"></a>
+									</li>
+									<li>
+										<a href="#" class="f3"></a>
+									</li>
+								</ul>
+							</a>
+						</figcaption>
+					</figure>
+					<figure class="effect-winston">
+						<img :src="video5.img" alt="" class="img-responsive one" />
+						<figcaption>
+							<h2>{{video5.title}}</h2>
+							<p>{{video5.main1}}</p>
+							<a href="video_pages/video5.html">
+								<ul class="social_icons">
+									<li>
+										<a href="#" class="f1"></a>
+									</li>
+									<li>
+										<a href="#" class="f2"></a>
+									</li>
+									<li>
+										<a href="#" class="f3"></a>
+									</li>
+								</ul>
+							</a>
+						</figcaption>
+					</figure>
+					<figure class="effect-winston">
+						<img :src="video6.img" alt="" class="img-responsive one" />
+						<figcaption>
+							<h2>{{video6.title}}</h2>
+							<p>{{video6.main1}}</p>
+							<a href="video_pages/video6.html">
+								<ul class="social_icons">
+									<li>
+										<a href="#" class="f1"></a>
+									</li>
+									<li>
+										<a href="#" class="f2"></a>
+									</li>
+									<li>
+										<a href="#" class="f3"></a>
+									</li>
+								</ul>
+							</a>
+						</figcaption>
+					</figure>
 				</div>
 			</div>
 		</div>
@@ -242,46 +326,46 @@
 		<div class="footer">
 			<div class="container">
 				<h3>订阅我们的新闻</h3>
-			<p class="para">在下方输入框输入您的邮箱账号进行订阅</p>
-			<div class="footer-contact">
-				<form>
-					<input type="text" placeholder="输入您的邮箱" required=" ">
-					<input type="submit" value="">
-				</form>
-			</div>
-			<div class="footer-grids">
-				<div class="col-md-3 footer-grid">
-					<p>浙江省 余杭区莫干山路1515号 交通学院创业楼108
-						<a href="mailto:info@example.com">admin@jt-safety.com</a>
-						<p>Phone : 0571-88184006</p>
-						<p>运营支持：杭州交赞科技有限公司</p>
+				<p class="para">在下方输入框输入您的邮箱账号进行订阅</p>
+				<div class="footer-contact">
+					<form>
+						<input type="text" placeholder="输入您的邮箱" required=" ">
+						<input type="submit" value="">
+					</form>
 				</div>
-				<div class="col-md-2 footer-grid">
-					<!--<ul>
+				<div class="footer-grids">
+					<div class="col-md-3 footer-grid">
+						<p>浙江省 余杭区莫干山路1515号 交通学院创业楼108
+							<a href="mailto:info@example.com">admin@jt-safety.com</a>
+							<p>Phone : 0571-88184006</p>
+							<p>运营支持：杭州交赞科技有限公司</p>
+					</div>
+					<div class="col-md-2 footer-grid">
+						<!--<ul>
 						<li><a href="contact.html">Contact</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="#">Privacy</a></li>
 						<li><a href="#">Terms</a></li>
 					</ul>-->
-				</div>
-				<div class="col-md-2 footer-grid">
-					<!--<ul>
+					</div>
+					<div class="col-md-2 footer-grid">
+						<!--<ul>
 						<li><a href="#">Download</a></li>
 						<li><a href="#">Support</a></li>
 						<li><a href="#">Documents</a></li>
 					</ul>-->
-				</div>
-				<div class="col-md-2 footer-grid">
-					<!--<ul>
+					</div>
+					<div class="col-md-2 footer-grid">
+						<!--<ul>
 						<li><a href="#">Venenatis</a></li>
 						<li><a href="#">Extras</a></li>
 						<li><a href="#">Forums</a></li>
 					</ul>-->
-				</div>
-				<div class="col-md-3 footer-grid">
-					<!--<img style="width: 50%;height: 50%;position: relative;left: 25%;" src="images/erweima.jpg"/>-->
-				
-					<!--<div class="footer-grid-left">
+					</div>
+					<div class="col-md-3 footer-grid">
+						<!--<img style="width: 50%;height: 50%;position: relative;left: 25%;" src="images/erweima.jpg"/>-->
+
+						<!--<div class="footer-grid-left">
 						<a href="#"><img src="images/1.jpg" alt=" " class="img-responsve" /></a>
 					</div>
 					<div class="footer-grid-left">
@@ -299,13 +383,13 @@
 					<div class="footer-grid-left">
 						<a href="#"><img src="images/p1.jpg" alt=" " class="img-responsve" /></a>-->
 					</div>
+					<div class="clearfix"> </div>
+				</div>
 				<div class="clearfix"> </div>
 			</div>
-			<div class="clearfix"> </div>
-		</div>
-		<div class="footer-copy">
-			<p>Copyright &copy; 2016.浙江交通安全教育网 All rights reserved.</p>
-		</div>
+			<div class="footer-copy">
+				<p>Copyright &copy; 2016.浙江交通安全教育网 All rights reserved.</p>
+			</div>
 		</div>
 		</div>
 		<!-- //footer -->
@@ -333,6 +417,7 @@
 		<!-- for bootstrap working -->
 		<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 		<!-- //for bootstrap working -->
+		<script src="js/vueanddata/videosdata.js"></script>
 	</body>
 
 </html>
