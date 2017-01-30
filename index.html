@@ -186,13 +186,13 @@
 							<h6><a href="news.html" style="color: white;">查看更多</a></h6>
 						</div>
 						<div class="panel-body">
-							<ul style="list-style: none;">
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="video1.href1">{{video1.title}}{{video1.main1}}</a></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="video2.href1">{{video2.title}}{{video2.main1}}</a></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="video3.href1">{{video3.title}}{{video3.main1}}</a></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="video4.href1">{{video4.title}}{{video4.main1}}</a></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="video5.href1">{{video5.title}}{{video5.main1}}</a></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="video6.href1">{{video6.title}}{{video6.main1}}</a></span></li>
+							<ul style="list-style: none;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="video1.href1" :title="video1.title+video1.main1">{{video1.title}}{{video1.main1}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="video2.href1" :title="video2.title+video2.main1">{{video2.title}}{{video2.main1}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="video3.href1" :title="video3.title+video3.main1">{{video3.title}}{{video3.main1}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="video4.href1" :title="video4.title+video4.main1">{{video4.title}}{{video4.main1}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="video5.href1" :title="video5.title+video5.main1">{{video5.title}}{{video5.main1}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="video6.href1" :title="video6.title+video6.main1">{{video6.title}}{{video6.main1}}</a></span></li>
 							</ul>
 						</div>
 					</div>
@@ -208,13 +208,13 @@
 
 						</div>
 						<div class="panel-body">
-							<ul style="list-style: none;">
-								<li style="overflow:hidden;"><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules1.href" style="overflow: hidden;">{{rules1.title}}</a></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules2.href">{{rules2.title}}</a></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules3.href">{{rules3.title}}</a></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules4.href">{{rules4.title}}</a></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules5.href">{{rules5.title}}</a></span></li>
-								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules6.href">{{rules6.title}}</a></span></li>
+							<ul style="list-style: none;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules1.href" :title="rules1.title+rules1.main1">{{rules1.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules2.href" :title="rules2.title+rules2.main1">{{rules2.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules3.href" :title="rules3.title+rules3.main1">{{rules3.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules4.href" :title="rules4.title+rules4.main1">{{rules4.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules5.href" :title="rules5.title+rules5.main1">{{rules5.title}}</a></span></li>
+								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="rules6.href" :title="rules6.title+rules6.main1">{{rules6.title}}</a></span></li>
 							</ul>
 						</div>
 					</div>
@@ -228,7 +228,7 @@
 
 						</div>
 						<div class="panel-body">
-							<ul style="list-style: none;">
+							<ul style="list-style: none;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
 								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="new1.href">{{new1.title}}</a></span></li>
 								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="new2.href">{{new2.title}}</a></span></li>
 								<li><span class="glyphicon glyphicon-chevron-right" style="color:cornflowerblue;"><a :href="new3.href">{{new3.title}}</a></span></li>
