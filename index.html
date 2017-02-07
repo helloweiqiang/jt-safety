@@ -104,24 +104,28 @@
 			<!--此处把banner1改为banner即可还原原先的背景图设定-->
 			<div id="myCarousel" class="carousel slide">
 				<!-- 轮播（Carousel）指标 -->
-				<ol class="carousel-indicators">
+				<!--<ol class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="1"></li>
 					<li data-target="#myCarousel" data-slide-to="2"></li>
-				</ol>
+				</ol>-->
 				<!-- 轮播（Carousel）项目 -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<a href="index.html"><img src="images/banner.jpg" alt="First slide"></a>
-						<div class="carousel-caption">第九届亚洲道路交通安全研讨会</div>
+						<a href="news.html"><img src="images/banner.jpg" alt="First slide">
+						<div class="carousel-caption"><h4>第九届亚洲道路交通安全研讨会</h4></div></a>
 					</div>
 					<div class="item">
-						<a href="results.html"><img src="images/banner2.jpg"></a>
-						<a href="results.html"><div class="carousel-caption">儿童安全教育报名</div></a>
+						<a href="results.html"><img src="images/banner2.jpg">
+						<a href="results.html"><div class="carousel-caption"><h4>交通政策标准</h4></div></a>
 					</div>
 					<div class="item">
-						<a href="results.html"><img src="images/banner3.jpeg" alt="Third slide"></a>
-						<div class="carousel-caption">儿童安全教育报名</div>
+						<a href="results.html"><img src="images/banner3.jpeg" alt="Third slide">
+						<div class="carousel-caption"><h4>儿童安全教育报名</h4></div></a>
+					</div>
+						<div class="item" id="accident">
+						<a :href="new1.href"><img :src="new1.img1" alt="Third slide" style="width: 100%;">
+						<div class="carousel-caption"><h4>{{new1.title}}</h4></div></a>
 					</div>
 				</div>
 				<!-- 轮播（Carousel）导航 -->

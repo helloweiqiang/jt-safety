@@ -27,9 +27,12 @@
 		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 		<!---//-slider---->
 		<style type="text/css">
-			#accident img{
+			#accident img {
 				margin-top: 5px;
 				margin-bottom: 5px;
+			}
+			a div{
+				margin-right: 1px;
 			}
 		</style>
 	</head>
@@ -108,369 +111,685 @@
 			<div class="footer-top">
 				<div class="container">
 					<div class="footer-grids" id="accident">
-						<a href=""><img :src="new1.img1" style="width: 100%;margin-top: 20px;" /></a>
+						<!--<a href=""><img :src="new1.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 						<div class="" style="display: flex;flex-direction: row;">
-						<!--<a href=""><img :src="new1.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new1.img1" style="width: 100%;margin-top: 20px;" /></a>
 						<a href=""><img :src="new1.img2" style="width: 100%;margin-top: 20px;" /></a>
 						<a href=""><img :src="new1.img3" style="width: 100%;margin-top: 20px;" /></a>-->
 						</div>
 						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
 							<div class="panel panel-default">
 								<!--展开栏-->
 								<div class="panel-heading" role="tab" id="headingOne" style="width: 100%;">
 									<h4 class="panel-title">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new1.title}}
-									</a>
+									<!--<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" :href="new1.href" aria-expanded="true" aria-controls="collapseOne">-->
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>-->
+									  <a :href="new1.href">{{new1.title}}</a>
+									
 								  </h4>
+									<a :href="new1.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new1.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new1.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new1.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new1.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
 									<div class="panel-body">
-										{{new1.main1}}
+										<!--{{new1.main1}}
 										<img :src="new1.img1" style="width: 100%;" /> {{new1.main2}}
 										<img :src="new1.img2" style="width: 100%;" />
 										<img :src="new1.img3" style="width: 100%;" />
 										<img :src="new1.img4" style="width: 100%;" />
-
+-->
 									</div>
 								</div>
 							</div>
-
-							<a href=""><img :src="new2.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new2.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingTwo">
 									<h4 class="panel-title">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new2.title}}
-									</a>
+									<!--<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" :href="new2.href" aria-expanded="true" aria-controls="collapseTwo">-->
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new2.href">{{new2.title}}</a>
+									
 								  </h4>
+									<a :href="new2.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new2.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new2.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new2.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new2.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
 									<div class="panel-body">
-										{{new2.main1}}
+										<!--{{new2.main1}}
 										<img :src="new2.img1" style="width: 100%;" />
 										<img :src="new2.img2" style="width: 100%;" />
-										<img :src="new2.img3" style="width: 100%;" />
+										<img :src="new2.img3" style="width: 100%;" />-->
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new3.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new3.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingThree">
 									<h4 class="panel-title">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new3.title}}
-									</a>
+									<!--<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">-->
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new3.href">{{new3.title}}</a>
+									
 								  </h4>
+									<a :href="new3.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new3.img1" style="width: 100%;height: 100%;" class="img-responsive" />
+											</div>
+											<div>
+												<img :src="new3.img2" style="width: 100%;height: 100%;" class="img-responsive" />
+											</div>
+											<div>
+												<img :src="new3.img3" style="width: 100%;height: 100%;" class="img-responsive" />
+											</div>
+											<div>
+												<img :src="new3.img4" style="width: 100%;height: 100%;" class="img-responsive" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseThree" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingThree">
 									<div class="panel-body">
-										{{new3.main1}}
+										<!--{{new3.main1}}
 
 										<img :src="new3.img1" style="width: 100%;" alt="" /> {{new3.main2}}
 
 										<img :src="new3.img2" style="width: 100%;" alt="" /> {{new3.main3}}
 
-										<img :src="new3.img3" style="width: 100%;" alt="" />
+										<img :src="new3.img3" style="width: 100%;" alt="" />-->
 
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new4.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new4.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingFour">
 									<h4 class="panel-title">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new4.title}}
-									</a>
+									<!--<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">-->
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new4.href">{{new4.title}}</a>
+									
 								  </h4>
+									<a :href="new4.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new4.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new4.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new4.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new4.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFour">
 									<div class="panel-body">
-										{{new4.main1}}
+										<!--{{new4.main1}}
 										<img :src="new4.img1" style="width: 100%;" /> {{new4.main2}}
 										<img :src="new4.img2" style="width: 100%;" /> {{new4.main3}}
-										<img :src="new4.img3" style="width: 100%;" /> {{new4.main4}}
+										<img :src="new4.img3" style="width: 100%;" /> {{new4.main4}}-->
 
 									</div>
 								</div>
 							</div>
 
-							<a href=""><img :src="new5.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new5.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingfive">
 									<h4 class="panel-title">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new5.title}}
-									</a>
+									<!--<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="true" aria-controls="collapsefive">-->
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new5.href">{{new5.title}}</a>
+									
 								  </h4>
+									<a :href="new5.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new5.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new5.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new5.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new5.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapsefive" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingfive">
 									<div class="panel-body">
-										{{new5.main1}}
+										<!--{{new5.main1}}
 										<img :src="new5.img1" style="width: 100%;" /> {{new5.main2}}
 										<img :src="new5.img2" style="width: 100%;" /> {{new5.main3}}
-										<img :src="new5.img3" style="width: 100%;" /> {{new5.main4}}
+										<img :src="new5.img3" style="width: 100%;" /> {{new5.main4}}-->
 
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new6.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new6.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingsix">
 									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new6.title}}
-									</a>
+										
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new6.href">{{new6.title}}</a>
 								  </h4>
+									<a :href="new6.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new6.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new6.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new6.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new6.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapsesix" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingsix">
 									<div class="panel-body">
-										{{new6.main1}}
+										<!--{{new6.main1}}
 										<img :src="new6.img1" style="width: 100%;" /> {{new6.main2}}
 										<img :src="new6.img2" style="width: 100%;" />
-										<img :src="new6.img3" style="width: 100%;" />
+										<img :src="new6.img3" style="width: 100%;" />-->
 
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new7.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new7.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingSeven">
 									<h4 class="panel-title">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingSeven" aria-expanded="true" aria-controls="collapseheadingSeven">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new7.title}}
-									</a>
+									<!--<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingSeven" aria-expanded="true" aria-controls="collapseheadingSeven">-->
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new7.href">{{new7.title}}</a>
+									
 								  </h4>
+									<a :href="new7.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new7.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new7.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new7.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new7.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseheadingSeven" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingSeven">
 									<div class="panel-body">
-										{{new7.main1}}
+										<!--{{new7.main1}}
 										<img :src="new7.img1" style="width: 100%;" /> {{new7.main2}}
 										<img :src="new7.img2" style="width: 100%;" /> {{new7.main3}}
 										<img :src="new7.img3" style="width: 100%;" /> {{new7.main4}}
 										<img :src="new7.img4" style="width: 100%;" />
-										<img :src="new7.img5" style="width: 100%;" />
+										<img :src="new7.img5" style="width: 100%;" />-->
 
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new8.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new8.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingEight">
 									<h4 class="panel-title">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingEight" aria-expanded="true" aria-controls="collapseheadingEight">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new8.title}}
-									</a>
+									<!--<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingEight" aria-expanded="true" aria-controls="collapseheadingEight">-->
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a href="">{{new8.title}}</a>
+									 <a :href="new8.href">
+								  <div  style="display: flex;flex-direction: row;">
+								  	<div>
+								  		<img :src="new8.img1" style="width: 100%;height: 100%;" />
+								  	</div>
+								  		<div>
+								  		<img :src="new8.img2" style="width: 100%;height: 100%;" />
+								  	</div>
+								  		<div>
+								  		<img :src="new8.img3" style="width: 100%;height: 100%;" />
+								  	</div>
+								  		<div>
+								  		<img :src="new8.img4" style="width: 100%;height: 100%;" />
+								  	</div>
+								  </div>
+								  </a>
 								  </h4>
 								</div>
 								<div id="collapseheadingEight" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingEight">
 									<div class="panel-body">
-										{{new8.main1}}
+										<!--{{new8.main1}}
 										<img :src="new8.img1" style="width: 100%;" /> {{new8.main2}}
-										<img :src="new8.img2" style="width: 100%;" />
+										<img :src="new8.img2" style="width: 100%;" />-->
 
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new9.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new9.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingNine">
 									<h4 class="panel-title">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new9.title}}
-									</a>
+									<!--<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">-->
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new9.href">{{new9.title}}</a>
+									
 								  </h4>
+									<a :href="new9.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new9.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new9.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new9.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new9.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
 									<div class="panel-body">
-										{{new9.main1}}
+										<!--{{new9.main1}}
 										<img :src="new9.img1" style="width: 100%;" /> {{new9.main2}}
 										<img :src="new9.img2" style="width: 100%;" />
-										<img :src="new9.img3" style="width: 100%;" />
+										<img :src="new9.img3" style="width: 100%;" />-->
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new10.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new10.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingTen">
 									<h4 class="panel-title">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingTen" aria-expanded="true" aria-controls="collapseheadingTen">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new10.title}}
-									</a>
+									<!--<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingTen" aria-expanded="true" aria-controls="collapseheadingTen">-->
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>--></a><a :href="new10.href">{{new10.title}}</a>
+									
 								  </h4>
+									<a :href="new10.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new10.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new10.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new10.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new10.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseheadingTen" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingEight">
 									<div class="panel-body">
-										{{new10.main1}}
+										<!--{{new10.main1}}
 										<img :src="new10.img1" style="width: 100%;" /> {{new10.main2}}
-										<img :src="new10.img2" style="width: 100%;" />
+										<img :src="new10.img2" style="width: 100%;" />-->
 
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new11.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new11.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingNine">
 									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new11.title}}
-									</a>
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new11.href">{{new11.title}}</a>
 								  </h4>
+									<a :href="new11.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new11.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new11.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new11.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new11.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
 									<div class="panel-body">
-										{{new11.main1}}
+										<!--{{new11.main1}}
 										<img :src="new11.img1" style="width: 100%;" /> {{new11.main2}}
-										<img :src="new11.img2" style="width: 100%;" />
+										<img :src="new11.img2" style="width: 100%;" />-->
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new12.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new12.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingNine">
 									<h4 class="panel-title">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new12.title}}
-									</a>
+									<!--<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">-->
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new12.href">{{new12.title}}</a>
+									
 								  </h4>
+									<a :href="new12.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new12.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new12.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new12.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new12.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
 									<div class="panel-body">
-										{{new12.main1}}
+										<!--{{new12.main1}}
 										<img :src="new12.img1" style="width: 100%;" /> {{new12.main2}}
-										<img :src="new12.img1" style="width: 100%;" />
+										<img :src="new12.img1" style="width: 100%;" />-->
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new13.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new13.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingNine">
 									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new13.title}}
-									</a>
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new13.href">{{new13.title}}</a>
+									
 								  </h4>
+									<a :href="new13.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new13.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new13.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new13.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new13.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
 									<div class="panel-body">
-										{{new13.main1}}
+										<!--{{new13.main1}}
 										<img :src="new13.img1" style="width: 100%;" /> {{new13.main2}}
-										<img :src="new13.img2" style="width: 100%;" />
+										<img :src="new13.img2" style="width: 100%;" />-->
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new14.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new14.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingNine">
 									<h4 class="panel-title">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new14.title}}
-									</a>
+									<!--<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">-->
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new14.href">{{new14.title}}</a>
+									
 								  </h4>
+									<a :href="new14.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new14.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new14.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new14.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new14.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
 									<div class="panel-body">
-										{{new14.main1}}
+										<!--{{new14.main1}}
 										<img :src="new14.img1" style="width: 100%;" /> {{new14.main2}}
-										<img :src="new14.img2" style="width: 100%;" />
+										<img :src="new14.img2" style="width: 100%;" />-->
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new15.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new15.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingNine">
 									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new15.title}}
-									</a>
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new15.href">{{new15.title}}</a>
+									
 								  </h4>
+									<a :href="new15.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new15.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new15.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new15.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new15.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
 									<div class="panel-body">
-										{{new15.main1}}
+										<!--{{new15.main1}}
 										<img :src="new15.img1" style="width: 100%;" /> {{new15.main2}}
-										<img :src="new15.img2" style="width: 100%;" />
+										<img :src="new15.img2" style="width: 100%;" />-->
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new16.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new16.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingNine">
 									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new16.title}}
-									</a>
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new16.href">{{new16.title}}</a>
+									
 								  </h4>
+									<a :href="new16.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new16.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new16.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new16.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new16.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
 									<div class="panel-body">
-										{{new16.main1}}
+										<!--{{new16.main1}}
 										<img :src="new16.img1" style="width: 100%;" /> {{new16.main2}}
-										<img :src="new16.img2" style="width: 100%;" />
-
+										<img :src="new16.img2" style="width: 100%;" />-->
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new17.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new17.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingNine">
 									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new17.title}}
-									</a>
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new17.href">{{new17.title}}</a>
 								  </h4>
+									<a :href="new17.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new17.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new17.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new17.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new17.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
 									<div class="panel-body">
-										{{new17.main1}}
+										<!--{{new17.main1}}
 										<img :src="new17.img1" style="width: 100%;" /> {{new17.main2}}
-										<img :src="new17.img2" style="width: 100%;" />
+										<img :src="new17.img2" style="width: 100%;" />-->
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new18.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new18.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingNine">
 									<h4 class="panel-title">
 									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new18.title}}
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>-->{{new18.title}}
 									</a>
 								  </h4>
+									<a :href="new18.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new18.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new18.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new18.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new18.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
 									<div class="panel-body">
-										{{new18.main1}}
+										<!--{{new18.main1}}
 										<img :src="new18.img1" style="width: 100%;" /> {{new18.main2}}
-										<img :src="new18.img2" style="width: 100%;" />
+										<img :src="new18.img2" style="width: 100%;" />-->
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new19.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new19.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingNine">
 									<h4 class="panel-title">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new19.title}}
-									</a>
+									<!--<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">-->
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new19.href">{{new19.title}}</a>
 								  </h4>
+									<a :href="new19.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new19.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new19.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new19.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new19.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
 									<div class="panel-body">
-										{{new19.main1}}
+										<!--{{new19.main1}}
 										<img :src="new19.img1" style="width: 100%;" /> {{new19.main2}}
-										<img :src="new19.img2" style="width: 100%;" />
+										<img :src="new19.img2" style="width: 100%;" />-->
 									</div>
 								</div>
 							</div>
-							<a href=""><img :src="new20.img1" style="width: 100%;margin-top: 20px;" /></a>
+							<!--<a href=""><img :src="new20.img1" style="width: 100%;margin-top: 20px;" /></a>-->
 							<div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingNine">
 									<h4 class="panel-title">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>{{new20.title}}
-									</a>
+									<!--<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheadingNine" aria-expanded="true" aria-controls="collapseheadingNine">-->
+									  <!--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i></a>--><a :href="new20.href">{{new20.title}}</a>
+									
 								  </h4>
+									<a :href="new20.href">
+										<div style="display: flex;flex-direction: row;">
+											<div>
+												<img :src="new20.img1" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new20.img2" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new20.img3" style="width: 100%;height: 100%;" />
+											</div>
+											<div>
+												<img :src="new20.img4" style="width: 100%;height: 100%;" />
+											</div>
+										</div>
+									</a>
 								</div>
 								<div id="collapseheadingNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingheadingNine">
 									<div class="panel-body">
@@ -481,10 +800,10 @@
 								</div>
 							</div>
 						</div>
-							<script src="js/vueanddata/accidentdata.js"></script>
-							<!--新闻数据存放-->
+						<script src="js/vueanddata/accidentdata.js"></script>
+						<!--新闻数据存放-->
 
-							<!--<figure class="effect-winston">
+						<!--<figure class="effect-winston">
 					<img src="images/1.jpg" alt="" class="img-responsive one" />
 					<figcaption> 
 						<h2>Jolly <span>Winston</span></h2>
@@ -520,62 +839,62 @@
 						</ul>
 					</figcaption>			
 				</figure>-->
-						</div>
 					</div>
 				</div>
+			</div>
 
-				<!-- //footer-top -->
-				<!-- footer -->
-				<div class="footer">
-					<div class="container">
-						<h3>订阅我们的新闻</h3>
-						<p class="para">在下方输入框输入您的邮箱账号进行订阅</p>
-						<div class="footer-contact">
-							<form>
-								<input type="text" placeholder="输入您的邮箱" required=" ">
-								<input type="submit" value="">
-							</form>
+			<!-- //footer-top -->
+			<!-- footer -->
+			<div class="footer">
+				<div class="container">
+					<h3>订阅我们的新闻</h3>
+					<p class="para">在下方输入框输入您的邮箱账号进行订阅</p>
+					<div class="footer-contact">
+						<form>
+							<input type="text" placeholder="输入您的邮箱" required=" ">
+							<input type="submit" value="">
+						</form>
+					</div>
+					<div class="footer-grids">
+						<div class="col-md-3 footer-grid">
+							<p>浙江省 余杭区莫干山路1515号 交通学院创业楼108
+								<a href="mailto:info@example.com">admin@jt-safety.com</a>
+								<p>Phone : 0571-88184006</p>
+								<p>运营支持：杭州交赞科技有限公司</p>
 						</div>
-						<div class="footer-grids">
-							<div class="col-md-3 footer-grid">
-								<p>浙江省 余杭区莫干山路1515号 交通学院创业楼108
-									<a href="mailto:info@example.com">admin@jt-safety.com</a>
-									<p>Phone : 0571-88184006</p>
-									<p>运营支持：杭州交赞科技有限公司</p>
-							</div>
-							<div class="col-md-2 footer-grid">
-								<!--<ul>
+						<div class="col-md-2 footer-grid">
+							<!--<ul>
 						<li><a href="contact.html">Contact</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="#">运营支持：杭州交赞科技有限公司</a></li>
 						<li><a href="#">Terms</a></li>
 					</ul>-->
-							</div>
-							<div class="col-md-2 footer-grid">
-								<!--<ul>
+						</div>
+						<div class="col-md-2 footer-grid">
+							<!--<ul>
 						<li><a href="#">Download</a></li>
 						<li><a href="#">Support</a></li>
 						<li><a href="#">Documents</a></li>
 					</ul>-->
-							</div>
-							<div class="col-md-2 footer-grid">
-								<!--<ul>
+						</div>
+						<div class="col-md-2 footer-grid">
+							<!--<ul>
 						<li><a href="#">Venenatis</a></li>
 						<li><a href="#">Extras</a></li>
 						<li><a href="#">Forums</a></li>
 					</ul>-->
-							</div>
-							<div class="col-md-3 footer-grid">
+						</div>
+						<div class="col-md-3 footer-grid">
 
-							</div>
-							<div class="clearfix"> </div>
 						</div>
-						<div class="footer-copy">
-							<p>Copyright &copy; 2016.浙江交通安全教育网 All rights reserved.</p>
-						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="footer-copy">
+						<p>Copyright &copy; 2016.浙江交通安全教育网 All rights reserved.</p>
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 		<!-- //footer -->
 		<!-- scroll_top_btn -->
