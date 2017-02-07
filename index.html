@@ -113,24 +113,28 @@
 				<div class="carousel-inner">
 					<div class="item active">
 						<a href="news.html"><img src="images/banner.jpg" alt="First slide">
-						<div class="carousel-caption"><h4>第九届亚洲道路交通安全研讨会</h4></div></a>
+							<div class="carousel-caption">
+								<h4>第九届亚洲道路交通安全研讨会</h4></div>
+						</a>
 					</div>
 					<div class="item">
 						<a href="results.html"><img src="images/banner2.jpg">
-						<a href="results.html"><div class="carousel-caption"><h4>交通政策标准</h4></div></a>
+							<a href="results.html">
+								<div class="carousel-caption">
+									<h4>交通政策标准</h4></div>
+							</a>
 					</div>
 					<div class="item">
 						<a href="results.html"><img src="images/banner3.jpeg" alt="Third slide">
-						<div class="carousel-caption"><h4>儿童安全教育报名</h4></div></a>
-					</div>
-						<div class="item" id="accident">
-						<a :href="new1.href"><img :src="new1.img1" alt="Third slide" style="width: 100%;">
-						<div class="carousel-caption"><h4>{{new1.title}}</h4></div></a>
+							<div class="carousel-caption">
+								<h4>儿童安全教育报名</h4></div>
+						</a>
 					</div>
 				</div>
 				<!-- 轮播（Carousel）导航 -->
-				<a class="carousel-control left" style="display: flex;align-items: center;justify-content: center;" href="#myCarousel" data-slide="prev"><img src="images/arrow-left.png"/></a><!--&lsaquo;-->
-				<a class="carousel-control right" style="display: flex;align-items: center;justify-content: center;" href="#myCarousel" data-slide="next"><img src="images/arrow-right.png"/></a>
+				<a class="carousel-control left" style="display: flex;align-items: center;justify-content: center;" href="#myCarousel" data-slide="prev"><img src="images/arrow-left.png" /></a>
+				<!--&lsaquo;-->
+				<a class="carousel-control right" style="display: flex;align-items: center;justify-content: center;" href="#myCarousel" data-slide="next"><img src="images/arrow-right.png" /></a>
 			</div>
 		</div>
 		</section>
@@ -181,7 +185,7 @@
 		</div>
 		<!-- //banner-bottom1 -->
 		<!-- banner-bottom -->
-		<div class="banner-bottom" id="accident">
+		<div class="banner-bottom" id="xinwen">
 			<div class="container">
 				<div class="col-lg-4" id="video">
 					<div class="panel panel-primary">
@@ -201,8 +205,7 @@
 						</div>
 					</div>
 				</div>
-			<script src="js/vueanddata/videosdata.js"></script>
-				
+				<script src="js/vueanddata/videosdata.js"></script>
 
 				<div class="col-lg-4" id="rules">
 					<div class="panel panel-primary">
@@ -224,7 +227,8 @@
 					</div>
 				</div>
 				<script src="js/vueanddata/rulesdata.js"></script>
-				<div class="col-lg-4">
+
+				<div class="col-lg-4" id="accident">
 					<div class="panel panel-primary">
 						<div class="panel-heading" style="display: flex;flex-direction: row;align-items: center;justify-content: space-around;">
 							<h3 class="panel-title"> <img src="images/shigu.png"/> 事故报道</h3>
@@ -243,6 +247,7 @@
 						</div>
 					</div>
 				</div>
+				<script src="js/vueanddata/accidentdata.js"></script>
 
 				<!-- //banner-bottom -->
 				<!-- body_grids -->
@@ -519,8 +524,6 @@
 		<!-- for bootstrap w<br />orking -->
 		<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 		<!-- //for bootstrap working -->
-		<script src="js/vueanddata/accidentdata.js"></script>
-		<script src="js/vueanddata/newsdata.js"></script>
 	</body>
 
 </html>
