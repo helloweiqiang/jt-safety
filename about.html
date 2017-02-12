@@ -94,42 +94,6 @@
 		<!-- about -->
 		<div class="about">
 			<div class="container">
-				<!--<div class="about-grds">
-				<div class="col-md-6 about-grd">
-					<div class="about-grd-main">
-						<a class="link" href="#"></a>
-					  <div class="overlay">
-						<div class="arrow-left"></div>
-						<div class="rectangle"></div>
-					  </div>-->
-				<!--
-					  <div class="description">
-						<h4>Project</h4>
-						<p>Sintel is a short computer animated film by the Blender 
-							Institute, part of the Blender Foundation Letraset sheets containing 
-							Lorem Ipsum passages, and more recently with desktop publishing software 
-							like Aldus PageMaker including versions of Lorem Ipsum. See more at Sintel.org</p>
-					  </div>
-						<img src="images/6.jpg" alt=" " class="img-responsive" />
-					</div>-->
-				<!--</div>
-				<div class="col-md-6 about-grd">
-					<h3>Short story about election !</h3>
-					<p class="leap">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-						when an unknown printer took a galley of type and scrambled it to make a type 
-						specimen book. It has survived not only five centuries, but also the leap 
-						into electronic typesetting, remaining essentially unchanged. It was 
-						popularised in the 1960s with the release of Letraset sheets containing 
-						Lorem Ipsum passages, and more recently with desktop publishing software 
-						like Aldus PageMaker including versions of Lorem Ipsum.</p>
-					<div class="more">
-						<a href="single.html" class="type-1">
-							<span> More Info... </span>
-							<span> More Info... </span>
-						</a>
-					</div>
-				</div>-->
 				<div class="clearfix"> </div>
 			</div>
 		</div>
@@ -141,40 +105,6 @@
 						<h3>国防交通法（草案)</h3>
 						<p class="nihil">来源： 中国人大网 2016年05月04日</p>
 						<h4> 2016年4月，第十二届全国人大常委会第二十次会议初次审议了《中华人民共和国国防交通法（草案）》。现将《中华人民共和国国防交通法（草案）》在中国人大网公布，社会公众可以直接登录中国人大网（www.npc.gov.cn）提出意见，也可以将意见寄送全国人大常委会法制工作委员会（北京市西城区前门西大街1号，邮编：100805。信封上请注明国防交通法草案征求意见）。征求意见截止日期：2016年6月3日。</h4>
-						<!--<div class="progress-grids">
-						<div class="progress progress1">
-						  <div class="progress-bar progress-bar1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-							60% Votes
-						  </div>
-						  <div class="party1">
-							<h5>Party- 1</h5>
-						  </div>
-						</div>
-						<div class="progress progress1">
-						  <div class="progress-bar progress-bar1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-							40% Votes
-						  </div>
-						  <div class="party1">
-							<h5>Party- 2</h5>
-						  </div>
-						</div>
-						<div class="progress progress1">
-						  <div class="progress-bar progress-bar1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-							70% Votes
-						  </div>
-						  <div class="party1">
-							<h5>Party- 3</h5>
-						  </div>
-						</div>
-						<div class="progress progress1">
-						  <div class="progress-bar progress-bar1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 78%;">
-							78% Votes
-						  </div>
-						  <div class="party1">
-							<h5>Party- 4</h5>
-						  </div>
-						</div>
-					</div>-->
 					<div class="panel-group" role="tablist" aria-multiselectable="true">
 						<div id="rules">
 					<div class="panel panel-default" >
@@ -189,6 +119,8 @@
 							<div class="panel-body">
 								{{rules1.main1}}
 								{{rules1.main2}}
+								<a :href="rules1.href">查看更多</a>
+								
 							</div>
 						</div>
 					</div>
@@ -204,7 +136,7 @@
 							<div class="panel-body">
 								{{rules2.main1}}
 								{{rules2.main2}}
-
+								<a :href="rules2.href">查看更多</a>
 							</div>
 						</div>
 					</div>
@@ -221,6 +153,8 @@
 							<div class="panel-body">
 								{{rules3.main1}}
 								{{rules3.main2}}
+								<a :href="rules3.href">查看更多</a>
+								
 							</div>
 						</div>
 					</div>
@@ -236,6 +170,8 @@
 							<div class="panel-body">
 								{{rules4.main1}}
 								{{rules4.main2}}
+								<a :href="rules4.href">查看更多</a>
+								
 							</div>
 						</div>
 					</div>
@@ -251,6 +187,8 @@
 							<div class="panel-body">
 								{{rules5.main1}}
 								{{rules5.main2}}
+								<a :href="rules5.href">查看更多</a>
+								
 							</div>
 						</div>
 					</div>
@@ -266,6 +204,8 @@
 							<div class="panel-body">
 								{{rules6.main1}}
 								{{rules6.main2}}
+								<a :href="rules6.href">查看更多</a>
+								
 							</div>
 						</div>
 					</div>

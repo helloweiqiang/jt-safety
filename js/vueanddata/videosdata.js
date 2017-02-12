@@ -2,7 +2,7 @@ var app = new Vue({
 	el: '#video',
 	data: {
 		video1: {
-			title: "20151009杭州",
+			title: "20161009杭州",
 			main1:"车祸现场 环卫工人交警轮流为伤者撑伞",
 			href:"http://player.youku.com/embed/XMTM1NjAwMjY0OA==",
 			href1:"video_pages/video1.html",
