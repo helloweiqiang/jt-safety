@@ -101,7 +101,9 @@
 			</div>
 		</div>
 		<!-- //banner1 -->
+		<!-- //该页面的数据分为两部分，一部分是文字+图片（main），一部分是视频部分（footer）-->
 		<!-- about -->
+		<div id="xinwen">
 		<div class="about">
 			<div class="container">
 				<div class="about-grds">
@@ -114,16 +116,15 @@
 							</div>
 
 							<div class="description">
-								<h4>亚洲道路交通安全研讨</h4>
-								<p>会议主要聚焦亚太地区国家所面临的交通安全管理中的各种挑战，以及不同的利益相关者如何能够团结协作，为道路安全做出贡献。会议由全球道路交通安全合作伙伴和国际道路风险评估机构主办，并获得中国红十字基金会以及中国道路交通安全协会等机构的支持。</p>
+								<h4>{{xinwen1.title1}}</h4>
+								<p>{{xinwen1.main1}}</p>
 							</div>
-							<img src="images/6.jpg" alt=" " class="img-responsive" />
+							<img :src="xinwen1.img1" alt=" " class="img-responsive" />
 						</div>
 					</div>
 					<div class="col-md-6 about-grd">
-						<h3>杨紫琼出席第九届亚洲道路交通安全研讨会</h3>
-						<p class="leap">5月24日，第九届亚洲道路交通安全研讨会在北京开幕。200多位代表将在3天的会议中，就交通安全管理中的各种挑战以及如何实现道路安全目标开展讨论。 每年125万人因为交通事故失去生命，超过5000万人伤残，每天多达500名儿童死在路上，道路交通事故已经成为15岁至29岁人群的头号杀手。 推广道路交通安全实践干预项目有助于减少交通事故的发生。5月24日在北京开幕的第九届亚洲交通安全研讨会上，全球道路交通安全合作伙伴（GRSP）总裁白瑞·沃森博士、国际道路风险评估机构（IRAP）总裁罗布·麦考尼，中国红十字会副会长、中国红十字基金会理事长郭长江和来自亚太地区国家的200余名代表一起呼吁激发更多支持和行动，实现“至2020年将全球道路交通事故伤亡减半”的联合国道路安全十年行动计划。
-						</p>
+						<h3>{{xinwen1.title2}}</h3>
+						<p class="leap">{{xinwen1.main2}}</p>
 						<div class="more">
 							<a href="single.html" class="type-1">
 								<!--<span> More Info... </span>-->
@@ -135,59 +136,76 @@
 				</div>
 			</div>
 		</div>
-		<!--<div class="about-bottom">
+		<!--分割线-->
+		<div class="about">
 			<div class="container">
-				<div class="about-bottom-grids">
-					<div class="col-md-8 about-bottom-grid-right">
-						<h3>Progress Bars Using in election counting !</h3>
-						<p class="nihil">Vote For Real Government.</p>
-						<h4>Letraset sheets containing 
-						Lorem Ipsum passages, and more recently with desktop publishing software 
-						like Aldus PageMaker including versions of Lorem Ipsum.</h4>
-						<div class="progress-grids">
-							<div class="progress progress1">
-								<div class="progress-bar progress-bar1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-									60% Votes
-								</div>
-								<div class="party1">
-									<h5>Party- 1</h5>
-								</div>
+				<div class="about-grds">
+					<div class="col-md-6 about-grd">
+						<div class="about-grd-main">
+							<a class="link" href="#"></a>
+							<div class="overlay">
+								<div class="arrow-left"></div>
+								<div class="rectangle"></div>
 							</div>
-							<div class="progress progress1">
-								<div class="progress-bar progress-bar1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-									40% Votes
-								</div>
-								<div class="party1">
-									<h5>Party- 2</h5>
-								</div>
+
+							<div class="description">
+								<h4>{{xinwen2.title1}}</h4>
+								<p>{{xinwen2.main1}}</p>
 							</div>
-							<div class="progress progress1">
-								<div class="progress-bar progress-bar1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-									70% Votes
-								</div>
-								<div class="party1">
-									<h5>Party- 3</h5>
-								</div>
-							</div>
-							<div class="progress progress1">
-								<div class="progress-bar progress-bar1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 78%;">
-									78% Votes
-								</div>
-								<div class="party1">
-									<h5>Party- 4</h5>
-								</div>
-							</div>
+							<img :src="xinwen2.img1" alt=" " class="img-responsive" />
 						</div>
-						<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
 					</div>
-					<div class="col-md-4 about-bottom-grid-left">
-						<img src="images/4.png" alt=" " class="img-responsive" />
+					<div class="col-md-6 about-grd">
+						<h3>{{xinwen2.title2}}</h3>
+						<p class="leap">{{xinwen2.main2}}</p>
+						<div class="more">
+							<a href="single.html" class="type-1">
+								<!--<span> More Info... </span>-->
+								<!--<span> More Info... </span>-->
+							</a>
+						</div>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
-		</div>-->
+		</div>
+		<!--分割线-->
+		<div class="about">
+			<div class="container">
+				<div class="about-grds">
+					<div class="col-md-6 about-grd">
+						<div class="about-grd-main">
+							<a class="link" href="#"></a>
+							<div class="overlay">
+								<div class="arrow-left"></div>
+								<div class="rectangle"></div>
+							</div>
+
+							<div class="description">
+								<h4>{{xinwen3.title1}}</h4>
+								<p>{{xinwen3.main1}}</p>
+							</div>
+							<img :src="xinwen3.img1" alt=" " class="img-responsive" />
+						</div>
+					</div>
+					<div class="col-md-6 about-grd">
+						<h3>{{xinwen3.title2}}</h3>
+						<p class="leap">{{xinwen3.main2}}</p>
+						<div class="more">
+							<a href="single.html" class="type-1">
+								<!--<span> More Info... </span>-->
+								<!--<span> More Info... </span>-->
+							</a>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
 		<!-- //about -->
+		<!-- //该页面的数据分为两部分，一部分是文字+图片（main），一部分是视频部分（footer）-->
+		</div>
+		<script src="js/vueanddata/newsdata.js"></script>
 		<!-- footer-top -->
 		<div class="footer-top" id="video">
 			<div class="container">
