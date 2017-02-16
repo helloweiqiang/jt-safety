@@ -37,7 +37,7 @@
 
 		<!---//-slider---->
 		<style type="text/css">
-			.contact img{
+			.contact img {
 				margin-top: 5px;
 				margin-bottom: 5px;
 			}
@@ -71,7 +71,7 @@
 									<a href="../index.html">首页</a>
 								</li>
 								<li>
-									<a href="../news.html">新闻资讯</a>
+									<a href="../logopages.html">新闻资讯</a>
 								</li>
 
 								<li>
@@ -100,101 +100,86 @@
 		<!-- banner1 -->
 		<!--<div class="banner1">调用大图，去除注释即可-->
 		<div class="container">
-		</div>
-		</div>
-		<!-- //banner1 -->
-		<!-- contact -->
-		<div class="contact" id="accident" style="margin-top: 30px;">
-			<div class="container">
-				<h3>{{new1.title}}</h3>
-				<!--<p class="nihil">Vote For Real Government.</p>-->
-				<div class="contact-grid">
-					<div class="col-md-12 contact-left">
-						<!--<iframe src="http://j.map.baidu.com/iQpRH" frameborder="0" style="border:0"></iframe>-->
-						{{new1.main1}}
-								<img :src="'../'+new1.img1" style="width: 100%;" /> {{new1.main2}}
-								<img :src="'../'+new1.img2" style="width: 100%;" />
-								<img :src="'../'+new1.img3" style="width: 100%;" />
-								<img :src="'../'+new1.img4" style="width: 100%;" />
-					</div>
-					<div class="col-md-7 contact-right">
-						<form>
-							<!--<input type="text" placeholder="Name" required=" ">
-						<input type="text" placeholder="Email Address" required=" ">
-						<input type="text" placeholder="Phone Number" required=" ">
-						<input type="text" placeholder="Subject" required=" ">
+			<!-- //banner1 -->
+			<!-- contact -->
+			<div class="contact" id="logopage" style="margin-top: 30px;">
+				<div class="container">
+					<h3>{{logopage1.title}}</h3>
+					<!--<p class="nihil">Vote For Real Government.</p>-->
+					<div class="contact-grid">
+						<div class="col-md-12 contact-left">
+							<!--<iframe src="http://j.map.baidu.com/iQpRH" frameborder="0" style="border:0"></iframe>-->
+
+							<img :src="'../'+logopage1.img1" style="width: 100%;" /> {{logopage1.main1}}
+							<img :src="'../'+logopage1.img2" style="width: 100%;" />{{logopage1.main2}}
+							<img :src="'../'+logopage1.img3" style="width: 100%;" />{{logopage1.main3}}<br/> {{logopage1.main4}}
+						</div>
 						<div class="clearfix"> </div>
-						<textarea placeholder="Type Your Text Here...." required=" "></textarea>
-						<input type="submit" value="Submit">
-						<input type="reset" value="Clear">-->
-						</form>
 					</div>
-					<div class="clearfix"> </div>
 				</div>
 			</div>
 		</div>
 
 		<!-- //contact -->
 		<!-- footer-top -->
-		<div class="footer-top" style="margin-top: -120px;">
+		<div class="footer-top" >
 			<div class="container">
 				<div class="footer-grids">
-
+					<!--</div>-->
 				</div>
 			</div>
-		</div>
-		<script src="../js/vueanddata/accidentdata.js"></script>
-		<!-- //footer-top -->
-		<!-- footer -->
-		<div class="footer">
-			<div class="container">
-				<h3>订阅我们的新闻</h3>
-				<p class="para">在下方输入框输入您的邮箱账号进行订阅</p>
-				<div class="footer-contact">
-					<form>
-						<input type="text" placeholder="输入您的邮箱" required=" ">
-						<input type="submit" value="">
-					</form>
-				</div>
-				<div class="footer-grids">
-					<div class="col-md-3 footer-grid">
-						<p>浙江省 余杭区莫干山路1515号 交通学院创业楼108
-							<a href="mailto:info@example.com">admin@jt-safety.com</a>
-							<p>Phone : 0571-88184006</p>
-							<p>运营支持：杭州交赞科技有限公司</p>
+			<script src="../js/vueanddata/logopagedata.js"></script>
+			<!-- //footer-top -->
+			<!-- footer -->
+			<div class="footer">
+				<div class="container">
+					<h3>订阅我们的新闻</h3>
+					<p class="para">在下方输入框输入您的邮箱账号进行订阅</p>
+					<div class="footer-contact">
+						<form>
+							<input type="text" placeholder="输入您的邮箱" required=" ">
+							<input type="submit" value="">
+						</form>
 					</div>
-					<div class="col-md-2 footer-grid">
-						<!--<ul>
+					<div class="footer-grids">
+						<div class="col-md-3 footer-grid">
+							<p>浙江省 余杭区莫干山路1515号 交通学院创业楼108
+								<a href="mailto:info@example.com">admin@jt-safety.com</a>
+								<p>Phone : 0571-88184006</p>
+								<p>运营支持：杭州交赞科技有限公司</p>
+						</div>
+						<div class="col-md-2 footer-grid">
+							<!--<ul>
 						<li><a href="contact.html">Contact</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="#">运营支持：杭州交赞科技有限公司</a></li>
 						<li><a href="#">Terms</a></li>
 					</ul>-->
-					</div>
-					<div class="col-md-2 footer-grid">
-						<!--<ul>
+						</div>
+						<div class="col-md-2 footer-grid">
+							<!--<ul>
 						<li><a href="#">Download</a></li>
 						<li><a href="#">Support</a></li>
 						<li><a href="#">Documents</a></li>
 					</ul>-->
-					</div>
-					<div class="col-md-2 footer-grid">
-						<!--<ul>
+						</div>
+						<div class="col-md-2 footer-grid">
+							<!--<ul>
 						<li><a href="#">Venenatis</a></li>
 						<li><a href="#">Extras</a></li>
 						<li><a href="#">Forums</a></li>
 					</ul>-->
-					</div>
-					<div class="col-md-3 footer-grid">
+						</div>
+						<div class="col-md-3 footer-grid">
 
+						</div>
+						<div class="clearfix"> </div>
 					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="footer-copy">
-					<p>Copyright &copy; 2016.浙江交通安全教育网 All rights reserved.</p>
+					<div class="footer-copy">
+						<p>Copyright &copy; 2016.浙江交通安全教育网 All rights reserved.</p>
+					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 		</div>
 		<!-- //footer -->

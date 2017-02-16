@@ -1,59 +1,25 @@
-var app = new Vue({
-  el:'#logopage',
-  data:{
-    logopage1:{
-      title:'',
-      main1:'',
-      main2:'',
-      main3:'',
-      img1:'',
-      img2:'',
-      img3:''
+new Vue({
+  el: '#logopage',
+  data: {
+   logopage1:{
+      title:'2016年中国汽车召回突破1100万辆，说明了什么？',
+      main1:'昨日，在国家质检总局召开的2016年缺陷产品召回工作新闻发布会上，公布了一项数据，2016年我国缺陷汽车召回数量达到1132.56万辆，首次在一年内突破千万辆大关。发布会上，国家质检总局执法督查司司长严冯敏说道，引发召回的缺陷问题比较集中。从召回涉及的缺陷问题所在总成来看，召回数量排名前三位的依次是：',
+      main2:'1.气囊和安全带问题召回64次，涉及数量643.02万辆',
+      main3:'2.发动机问题召回28次，涉及数量241.98万辆',
+      main4:'3.车身问题召回29次，涉及数量85.29万辆',
+      img1:'images/logopageimg/1.jpg',
+      img2:'images/logopageimg/2.jpg',
+      img3:'images/logopageimg/3.jpg',
+      href:'logopage_pages/logopage1.html'
     },
     logopage2:{
-      title:'',
-      main1:'',
-      main2:'',
-      main3:'',
-      img1:'',
-      img2:'',
-      img3:''
-    },
-    logopage3:{
-      title:'',
-      main1:'',
-      main2:'',
-      main3:'',
-      img1:'',
-      img2:'',
-      img3:''
-    },
-    logopage4:{
-      title:'',
-      main1:'',
-      main2:'',
-      main3:'',
-      img1:'',
-      img2:'',
-      img3:''
-    },
-    logopage5:{
-      title:'',
-      main1:'',
-      main2:'',
-      main3:'',
-      img1:'',
-      img2:'',
-      img3:''
-    },
-    logopage6:{
-      title:'',
-      main1:'',
-      main2:'',
-      main3:'',
-      img1:'',
-      img2:'',
-      img3:''
+      title:'2016年中国市场召回过千万辆缺陷汽车，57%因气囊和安全带问题！',
+      main1:'2016年1月1日,《缺陷消费品召回管理办法》开始实施，一年下来，究竟中国汽车市场发生怎样变化？',
+      main2:'2017年2月，《消费者报道》统计梳理了2016年45个汽车品牌的召回案例，结合往年的整体召回数据，试图分析当下国内汽车召回环境及消费者权益的保障情况。',
+      main3:'结果发现，2016年国内涉及召回的缺陷汽车共计1132.56万辆，同比增长103%，再创历史新高。其中日系本田汽车召回数量位居榜首，占总量的三分之一。',
+      img1:'images/logopageimg/4.jpg',
+      href:'logopage_pages/logopage2.html'
+      
     }
   }
 })
