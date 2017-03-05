@@ -73,14 +73,69 @@
 				margin-bottom: 20px;
 			}
 			
-			@media only screen and (min-width:1000px){
-				.img-block{
+			@media only screen and (min-width:1000px) {
+				.img-block {
 					display: flex;
-				flex-direction: row;
+					flex-direction: row;
 				}
 			}
-			.carousel-inner img{
+			
+			.carousel-inner img {
 				width: 80rem;
+			}
+			/*提交css分割线*/
+			
+			.submit {
+				width: 100%;
+				height: 56px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				background-color: #DC143C;
+			}
+			
+			.main {
+				height: 44px;
+				align-items: center;
+			}
+			
+			.main form {
+				height: 44px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+			}
+			
+			.main form input {
+				height: 25px;
+				outline: none;
+				line-height: 15px;
+			}
+			
+			.main form span {
+				color: white;
+			}
+			
+			@media only screen and (max-width:900px) {
+				.submit {
+					height: 150px;
+					align-items: center;
+				}
+				.main{
+					height: 140px;
+				}
+				.main form {
+					flex-wrap: wrap;
+					
+				}
+				.main form div {
+					width: 48%;
+					margin-bottom: 10px;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+				}
 			}
 		</style>
 		<!---strat-slider---->
@@ -150,8 +205,23 @@
 			</img>
 		</div>-->
 		<div class="container-fluid" style="margin-top: 10px;">
-			<img src="images/123.jpg" style="width: 100%;"/>
+			<img src="images/123.jpg" style="width: 100%;" />
 		</div>
+		<!--提交内容模块start-->
+		<div class="submit">
+			<div class="main">
+				<form action="" method="post">
+					<div><span>您的姓名:</span><input type="text" name="" id="" required/> </div>
+					<div><span>您的电话:</span><input type="text" name="" id="" required/> </div>
+					<div><span>投诉车型:</span><input type="text" name="" id="" required/></div>
+					<div><span>投诉内容:</span><input type="text" name="" id="" required/></div>
+					<div><input class="btn btn-default" type="submit" value="立即投诉" /></div>
+				</form>
+
+			</div>
+		</div>
+		<!--提交内容模块end''-->
+
 		<div class="about-bottom">
 			<div class="container img-block">
 				<div id="myCarousel" class="carousel slide">
@@ -167,10 +237,10 @@
 							<img src="images/banner.jpg" alt="First slide">
 						</div>
 						<div class="item">
-							<img src="images/banner2.jpg" alt="Second slide"  >
+							<img src="images/banner2.jpg" alt="Second slide">
 						</div>
 						<div class="item">
-							<img src="images/banner3.jpg" alt="Third slide" >
+							<img src="images/banner3.jpg" alt="Third slide">
 						</div>
 					</div>
 					<!-- 轮播（Carousel）导航 -->
@@ -179,6 +249,7 @@
 					<a class="carousel-control right col-center" href="#myCarousel" data-slide="next">&rsaquo;
 					</a>
 				</div>
+
 				<div class="right flex-col">
 					<div class="top row-center">
 						<h2>盘点2016年年度车型</h2>
@@ -211,7 +282,6 @@
 			</div>
 			<div class="clearfix"> </div>
 		</div>
-
 		<!-- //banner1 -->
 		<!-- about -->
 		<!-- //footer-top -->
